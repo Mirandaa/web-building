@@ -1,0 +1,18 @@
+<?xml version='1.0' encoding='utf-8'?>
+<!DOCTYPE hibernate-configuration PUBLIC
+    "-//Hibernate/Hibernate Configuration DTD//EN"
+    "http://www.hibernate.org/dtd/hibernate-configuration-3.0.dtd">
+<hibernate-configuration>
+  <session-factory>
+    <property name="connection.url">jdbc:mysql://104.236.132.15:3306/portfolio</property>
+    <property name="connection.username">root</property>
+    <property name="connection.password">9595yinkai</property>
+    <property name="connection.driver_class">com.mysql.jdbc.Driver</property>
+      <property name="hibernate.dialect">org.hibernate.dialect.MySQL5InnoDBDialect</property>
+      <mapping resource="entity/UserInfoEntity.hbm.xml"/>
+      <mapping class="entity.UserInfoEntity"/>
+
+      <!-- DB schema will be updated if needed -->
+    <!-- <property name="hbm2ddl.auto">update</property> -->
+  </session-factory>
+</hibernate-configuration>
