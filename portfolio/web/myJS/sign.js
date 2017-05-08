@@ -5,7 +5,7 @@ function sign_in() {
     var user_json = {};
     user_json["name"] = $("#sign_in_user").val();
     user_json["psw"] = $("#sign_in_pass").val();
-    $.post("/portfolio/signIn",user_json,function (data) {
+    $.post("signIn",user_json,function (data) {
         var ret = JSON.parse(data);
         if(ret.res){
             window.location.href = "index.jsp";

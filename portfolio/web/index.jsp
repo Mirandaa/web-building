@@ -102,9 +102,6 @@
                     data-splitout="none" 
                     data-responsive_offset="on"
                     data-start="100">
-                    <div class="img-box center">
-                        <img src="images/slider/logo.png" alt="">
-                    </div>
                 </div>
                 <div class="tp-caption tp-resizeme"
                     data-x="center" data-hoffset="" 

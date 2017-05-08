@@ -38,4 +38,13 @@
         <servlet-name>signOut</servlet-name>
         <url-pattern>/signOut</url-pattern>
     </servlet-mapping>
+
+    <servlet>
+        <servlet-name>testCheck</servlet-name>
+        <servlet-class>servlet.testCheck</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>testCheck</servlet-name>
+        <url-pattern>/testCheck</url-pattern>
+    </servlet-mapping>
 </web-app>

@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en-us">
+<head>
+	<meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1"/>
+	<title>组财｜风险承担能力测试</title>
+
+	<link rel="shortcut icon" href="favicon.ico">
+	<link rel="apple-touch-icon image_src" href="demo/favicon.png">
+
+	
+	<link rel="author" href="humans.txt">
+	<link rel="stylesheet" href="css/highlight-9.5.0.min.css">
+	<link rel="stylesheet" href="css/checkbix.css">
+	<link rel="stylesheet" href="css/check.css">
+	<link rel="stylesheet" href="css/test-button.css">
+	<link rel="stylesheet" href="css/component.css">
+</head>
+<body>
+<div class="img-background">
+	<img src="images/logo/logo.png" alt="logo">
+</div>
+
+	<h1>风险承担能力测试</h1>
+	<h2>投资有风险，不同承受能力和风险偏好的客户，应选择不同的投资产品或投资组合。</h2>
+	<h3>以下测试，帮助您更好地了解自己的风险偏好和风险承受能力。请仔细阅读下面的十个题目，并用点击○的方式，选出每个题目中最适合您的选项。</h3>
+	<div class="stats"></div>
+
+	<h3>1. 您现在的年龄:</h3>
+	<label class="selection"><input id="age1" type="radio" name="age" class="checkbix" data-shape="circled" data-color="blue" data-text="A. 60岁以上" value="1"></label>
+	<label class="selection"><input id="age2" type="radio" name="age" class="checkbix" data-shape="circled" data-color="blue" data-text="B. 46-60岁" value="2"></label>
+	<label class="selection"><input id="age3" type="radio" name="age" class="checkbix" data-shape="circled" data-color="blue" data-text="C. 36-45岁" value="3"></label>
+	<label class="selection"><input id="age4" type="radio" name="age" class="checkbix" data-shape="circled" data-color="blue" data-text="D. 26-35岁" value="4"></label>
+	<label class="selection"><input id="age5" type="radio" name="age" class="checkbix" data-shape="circled" data-color="blue" data-text="E. 25岁以下" value="5"></label>
+
+	<h3>2. 您的健康状况如何:</h3>
+	<label class="selection"><input id="health1" type="radio" name="health" class="checkbix" data-shape="circled" data-color="blue" data-text="A. 一直都不是很好,要经常吃药和去医院" value="1"></label><br>
+	<label class="selection"><input id="health2" type="radio" name="health" class="checkbix" data-shape="circled" data-color="blue" data-text="B. 有点不好,不过目前还没什么大问题, 我担心当我老了的时候会变的恶劣" value="2"></label><br>
+	<label class="selection"><input id="health3" type="radio" name="health" class="checkbix" data-shape="circled" data-color="blue" data-text="C. 至少现在还行,不过我家里人有病史" value="3"></label><br>
+	<label class="selection"><input id="health4" type="radio" name="health" class="checkbix" data-shape="circled" data-color="blue" data-text="D. 还行, 没大毛病" value="4"></label><br>
+	<label class="selection"><input id="health5" type="radio" name="health" class="checkbix" data-shape="circled" data-color="blue" data-text="E. 非常好" value="5"></label>
+
+	<h3>3. 是否有过投资股票、基金或债券的经历？</h3>
+	<label class="selection"><input id="experience1" type="radio" name="experience" class="checkbix" data-shape="circled" data-color="blue" data-text="A. 没有" value="1"></label>
+	<label class="selection"><input id="experience2" type="radio" name="experience" class="checkbix" data-shape="circled" data-color="blue" data-text="B. 有，少于3年" value="2"></label>
+	<label class="selection"><input id="experience3" type="radio" name="experience" class="checkbix" data-shape="circled" data-color="blue" data-text="C. 有，3～5年" value="3"></label>
+	<label class="selection"><input id="experience4" type="radio" name="experience" class="checkbix" data-shape="circled" data-color="blue" data-text="D. 有，超过5年" value="4"></label>
+
+	<h3>4. 您目前投资的主要目的是？</h3>
+	<label class="selection"><input id="purpose1" type="radio" name="purpose" class="checkbix" data-shape="circled" data-color="blue" data-text="A. 确保资产的安全性，同时获得固定收益" value="1"></label><br>
+	<label class="selection"><input id="purpose2" type="radio" name="purpose" class="checkbix" data-shape="circled" data-color="blue" data-text="B. 希望投资能获得一定的增值，同时获得波动适度的年回报" value="2"></label><br>
+	<label class="selection"><input id="purpose3" type="radio" name="purpose" class="checkbix" data-shape="circled" data-color="blue" data-text="C. 倾向于长期的成长，较少关心短期的回报和波动" value="3"></label><br>
+	<label class="selection"><input id="purpose4" type="radio" name="purpose" class="checkbix" data-shape="circled" data-color="blue" data-text="D. 只关心长期的高回报，能够接受短期的资产价值波动" value="4"></label><br>
+
+	<h3>5. 您投资的总额占您个人（或家庭）总资产（含房产等）的：</h3>
+	<label class="selection"><input id="rate1" type="radio" name="rate" class="checkbix" data-shape="circled" data-color="blue" data-text="A. 低于10%" value="1"></label>
+	<label class="selection"><input id="rate2" type="radio" name="rate" class="checkbix" data-shape="circled" data-color="blue" data-text="B. 10%-25%" value="2"></label>
+	<label class="selection"><input id="rate3" type="radio" name="rate" class="checkbix" data-shape="circled" data-color="blue" data-text="C. 25%-40%" value="3"></label>
+	<label class="selection"><input id="rate4" type="radio" name="rate" class="checkbix" data-shape="circled" data-color="blue" data-text="D. 40%-55%" value="4"></label>
+	<label class="selection"><input id="rate5" type="radio" name="rate" class="checkbix" data-shape="circled" data-color="blue" data-text="E. 55%以上" value="5"></label>
+
+	<h3>6. 您预期的投资期限是：</h3>
+	<label class="selection"><input id="date1" type="radio" name="date" class="checkbix" data-shape="circled" data-color="blue" data-text="A. 少于1年" value="1"></label>
+	<label class="selection"><input id="date2" type="radio" name="date" class="checkbix" data-shape="circled" data-color="blue" data-text="B. 1—3年" value="2"></label>
+	<label class="selection"><input id="date3" type="radio" name="date" class="checkbix" data-shape="circled" data-color="blue" data-text="C. 3—5年" value="3"></label>
+	<label class="selection"><input id="date4" type="radio" name="date" class="checkbix" data-shape="circled" data-color="blue" data-text="D. 5—10年" value="4"></label>
+	<label class="selection"><input id="date5" type="radio" name="date" class="checkbix" data-shape="circled" data-color="blue" data-text="E. 10年以上" value="5"></label>
+
+	<h3>7. 在您投资60天后，价格下跌20%。假设所有基本面均未改变，您会怎么做? </h3>
+	<label class="selection"><input id="down1" type="radio" name="down" class="checkbix" data-shape="circled" data-color="blue" data-text="A. 为避免更大的担忧，全部卖掉再试试其他的" value="1"></label><br>
+	<label class="selection"><input id="down2" type="radio" name="down" class="checkbix" data-shape="circled" data-color="blue" data-text="B. 卖掉一部分，其余等着看看" value="2"></label><br>
+	<label class="selection"><input id="down3" type="radio" name="down" class="checkbix" data-shape="circled" data-color="blue" data-text="C. 什么也不做，静等收回投资" value="3"></label><br>
+	<label class="selection"><input id="down4" type="radio" name="down" class="checkbix" data-shape="circled" data-color="blue" data-text="D. 再买入。它曾是好的投资，现在也是便宜的投资" value="4"></label><br>
+
+	<h3>8. 您有没有想过如果有一天您的财务状况发生很大的变化,比如说突然有一笔很大的开支,这笔开支可能会动用您10%的个人资产或甚至更多:  </h3>
+	<label class="selection"><input id="spending1" type="radio" name="spending" class="checkbix" data-shape="circled" data-color="blue" data-text="A. 没想过, 我感觉这种大变化不会在我身上发生" value="1"></label><br>
+	<label class="selection"><input id="spending2" type="radio" name="spending" class="checkbix" data-shape="circled" data-color="blue" data-text="B. 经常想, 我很担心整个生活都将变得一团糟,可是我又有什么办法呢?" value="2"></label><br>
+	<label class="selection"><input id="spending3" type="radio" name="spending" class="checkbix" data-shape="circled" data-color="blue" data-text="C. 想过一两次, 感觉挺可怕的" value="3"></label><br>
+	<label class="selection"><input id="spending4" type="radio" name="spending" class="checkbix" data-shape="circled" data-color="blue" data-text="D. 曾经有想过一两次,但是我还年轻，无所谓" value="4"></label><br>
+
+	<h3>9. 您对您目前的财务状况满意吗？ </h3>
+	<label class="selection"><input id="state1" type="radio" name="state" class="checkbix" data-shape="circled" data-color="blue" data-text="A. 不太好, 常常要借钱" value="1"></label><br>
+	<label class="selection"><input id="state2" type="radio" name="state" class="checkbix" data-shape="circled" data-color="blue" data-text="B. 刚刚好, 我要特别小心打理" value="2"></label><br>
+	<label class="selection"><input id="state3" type="radio" name="state" class="checkbix" data-shape="circled" data-color="blue" data-text="C. 我做的还行,一直按照我人生的规划在顺利进行" value="3"></label><br>
+	<label class="selection"><input id="state4" type="radio" name="state" class="checkbix" data-shape="circled" data-color="blue" data-text="D. 特别好, 现在想买什么就买什么" value="4"></label><br>
+
+	<h3>10. 当您退休后,您计划做什么: </h3>
+	<label class="selection"><input id="retire1" type="radio" name="retire" class="checkbix" data-shape="circled" data-color="blue" data-text="A. 节俭的生活, 避免把钱花光" value="1"></label><br>
+	<label class="selection"><input id="retire2" type="radio" name="retire" class="checkbix" data-shape="circled" data-color="blue" data-text="B. 继续工作挣钱, 因为我的养老金估计不够用" value="2"></label><br>
+	<label class="selection"><input id="retire3" type="radio" name="retire" class="checkbix" data-shape="circled" data-color="blue" data-text="C. 享受人生,周游世界" value="3"></label><br>
+	<label class="selection"><input id="retire4" type="radio" name="retire" class="checkbix" data-shape="circled" data-color="blue" data-text="D. 努力花钱,直到去见上帝之前还要给上帝带上一件最奢侈的礼物" value="4"></label><br>
+
+<div class="progress-button">
+	<a onclick="test_check_submit()" class="md-trigger" data-modal="modal-1">提交</a>
+	<svg class="progress-circle" width="70" height="70"><path d="m35,2.5c17.955803,0 32.5,14.544199 32.5,32.5c0,17.955803 -14.544197,32.5 -32.5,32.5c-17.955803,0 -32.5,-14.544197 -32.5,-32.5c0,-17.955801 14.544197,-32.5 32.5,-32.5z"/></svg>
+	<svg class="checkmark" width="70" height="70"><path d="m31.5,46.5l15.3,-23.2"/><path d="m31.5,46.5l-8.5,-7.1"/></svg>
+	<svg class="cross" width="70" height="70"><path d="m35,35l-9.3,-9.3"/><path d="m35,35l9.3,9.3"/><path d="m35,35l-9.3,9.3"/><path d="m35,35l9.3,-9.3"/></svg>
+</div><!-- /progress-button -->
+
+	<div class="md-modal md-effect-1" id="modal-1">
+		<div class="md-content">
+			<h3>风险承受能力测试结果</h3>
+			<div>
+				<p>您当前的测试得分是<strong id="score">14</strong>分，是一位<strong id = type>稳健型</strong>的投资者<br><br><span id="content">从总体投资来看，在风险较小的情况下获得一定的收益是您主要的投资目的。您通常愿意使本金面临一定的风险，但在做投资决定时，对风险总是客观存在的道理有清楚的认识，会仔细地对将要面临的风险进行认真的分析。总体来看，愿意承受市场的平均风险。</span></p>
+				<ul>
+					<li>您的风险承受能力： <strong id="ability">中</strong></li>
+					<li>您的获利期待：<strong id="except">中等收益</strong></li>
+					<li>资产配置建议：<strong id="suggest">货币类资产25-50%，债券类资产25-65%，股票类资产10-25%</strong></li>
+				</ul>
+				<a href="index.jsp"><button class="md-close btn-sm btn-primary">确定</button></a>
+			</div>
+		</div>
+	</div>
+
+	<script src="js/highlight.min.js"></script>
+	<script>hljs.initHighlightingOnLoad();</script>
+	<script src="js/jquery-3.1.1.min.js"></script>
+	<script src="js/checkbix.js"></script>
+	<script src="js/classie.js"></script>
+	<script src="js/modalEffects.js"></script>
+	<script src="myJS/test.js"></script>
+	<script>
+		Checkbix.init();
+	</script>
+
+	
+</body>
+</html>

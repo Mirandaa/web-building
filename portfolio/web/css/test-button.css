@@ -1,0 +1,78 @@
+/* Button container */
+.progress-button {
+	position: relative;
+	display: inline-block;
+	text-align: center;
+	width: 100%;
+	min-width: 250px;
+	margin: 0px auto;
+}
+
+/* Button style */
+.progress-button a {
+	cursor: pointer;
+	display: block;
+	margin: 0px auto;
+	padding: 0;
+	width: 250px;
+	height: 50px;
+	line-height: 50px;
+	border: 2px solid #48c7ec;
+	border-radius: 40px;
+	background: transparent;
+	color: #48c7ec;
+	letter-spacing: 1px;
+	font-size: 18px;
+	font-family: 'Montserrat', sans-serif;
+	outline: none;
+	text-decoration: none;
+	text-align: center;
+	vertical-align: middle;
+	-webkit-tap-highlight-color: transparent;
+	-webkit-transition: background-color 0.3s, color 0.3s, width 0.3s, border-width 0.3s, border-color 0.3s;
+	transition: background-color 0.3s, color 0.3s, width 0.3s, border-width 0.3s, border-color 0.3s;
+}
+
+.progress-button a:hover {
+	background-color: #48c7ec;
+	color: #fff;
+}
+
+.progress-button a:focus {
+	outline: none;
+}
+
+/* Text (transition for when returning to initial state) */
+.progress-button a span {
+	-webkit-transition: opacity 0.3s 0.1s;
+	transition: opacity 0.3s 0.1s;
+}
+
+/* Common style of SVGs */
+.progress-button svg {
+	position: absolute;
+	top: 0;
+	left: 50%;
+	-webkit-transform: translateX(-50%);
+	transform: translateX(-50%);
+	pointer-events: none;
+}
+
+.progress-button svg path {
+	opacity: 0;
+	fill: none;
+}
+
+.progress-button svg.progress-circle path {
+	stroke: #48c7ec;
+	stroke-width: 5;
+}
+
+.progress-button svg.checkmark path,
+.progress-button svg.cross path {
+	stroke: #fff;
+	stroke-linecap: round;
+	stroke-width: 4;
+	-webkit-transition: opacity 0.1s;
+	transition: opacity 0.1s;
+}

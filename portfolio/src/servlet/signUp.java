@@ -54,7 +54,7 @@ public class signUp extends HttpServlet {
         JSONObject jsonObject = new JSONObject();
         jsonObject.put("res",sign);
         jsonObject.put("msg",data);
-        response.getWriter().print(jsonObject.toString());
+        response.getWriter().print(jsonObject);
     }
 
     protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
