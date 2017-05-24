@@ -13,7 +13,8 @@ public class SessionInstance {
     private static Session session;
 
     public static Session getSession() {
-        if (session == null){
+        if (session == null||!session.isOpen()){
+            System.out.println("new session");
             session = factory.openSession();
             return session;
         }
@@ -22,8 +23,10 @@ public class SessionInstance {
         }
     }
     public static void closeSession(){
-        if (session!=null)
+        if (session!=null && session.isOpen()) {
             session.close();
+            System.out.println("close session");
+        }
     }
     private static SessionFactory buildFactory(){
         configuration = new Configuration();

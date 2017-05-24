@@ -8,11 +8,10 @@
           <element id="module-output" name="portfolio" />
         </element>
         <element id="directory" name="lib">
-          <element id="library" level="project" name="Hibernate 5.2.3-5.2.3" />
+          <element id="library" level="project" name="Hibernate 5.2.9-5.2.9" />
           <element id="library" level="project" name="mysql-connector-java-5.1.40-bin" />
           <element id="library" level="project" name="json" />
           <element id="library" level="project" name="jsoup-1.10.2" />
-          <element id="library" level="project" name="Hibernate 5.2.9-5.2.9" />
         </element>
       </element>
     </root>

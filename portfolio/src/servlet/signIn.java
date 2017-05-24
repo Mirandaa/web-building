@@ -39,7 +39,7 @@ public class signIn extends HttpServlet {
         Query query = session.createQuery(queryString);
         query.setParameter(0,user);
         List<UserInfoEntity> list = (List<UserInfoEntity>)query.list();
-
+        SessionInstance.closeSession();
         if (list.size() == 0){
             data = "name not found";
         }
@@ -60,6 +60,6 @@ public class signIn extends HttpServlet {
     }
 
     protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
-        doPost(request,response);
+        response.getWriter().write("123466");
     }
 }

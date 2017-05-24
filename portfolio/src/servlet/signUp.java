@@ -51,6 +51,7 @@ public class signUp extends HttpServlet {
         else {
             data = "the name repeat";
         }
+        SessionInstance.closeSession();
         JSONObject jsonObject = new JSONObject();
         jsonObject.put("res",sign);
         jsonObject.put("msg",data);
