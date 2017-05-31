@@ -35,7 +35,6 @@ public class Jianshe_bank implements Get_data{
                 ProductsEntity entity = new ProductsEntity();
                 entity.setId(oldJson.getString("code"));
                 entity.setLink("http://finance.ccb.com/cn/finance/ProductDetails.html?PRODUCT_ID=" + entity.getId());
-//                System.out.println(oldJson.get("purFloorAmt"));
                 String x = oldJson.getString("purFloorAmt");
                 if (x.equals("null")){
                     entity.setMinMoney(null);
@@ -52,16 +51,15 @@ public class Jianshe_bank implements Get_data{
                 entity.setDays(oldJson.getInt("investPeriod"));
                 entity.setSurplusValue(null);
                 Session session = SessionInstance.getSession();
-
-                    Transaction transaction = session.beginTransaction();
-                    session.saveOrUpdate(entity);
-                    transaction.commit();
-                    i++;
+                Transaction transaction = session.beginTransaction();
+                session.saveOrUpdate(entity);
+                transaction.commit();
+                i++;
                 SessionInstance.closeSession();
             }
         } catch (Exception e) {
             e.printStackTrace();
         }
-        System.out.println("更新 " + i + "条记录");
+        System.out.println("建行更新 " + i + "条记录");
     }
 }

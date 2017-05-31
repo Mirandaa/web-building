@@ -18,6 +18,7 @@ function test_check_submit() {
             return;
         }
     }
+
     $.post("testCheck", info, function (data) {
         var types = ["谨慎型","稳健型","平衡型","进取型","激进型"];
         var contents =["您属于可以承担低风险而作风谨慎类型的投资者。您适合投资于以保本为主的投资工具，但您因此会牺牲资本升值的机会。",
