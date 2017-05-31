@@ -1,0 +1,72 @@
+<?xml version='1.0' encoding='utf-8'?>
+<!DOCTYPE hibernate-mapping PUBLIC
+    "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+    "http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+<hibernate-mapping>
+
+    <class name="entity.UserInfoEntity" table="user_info" schema="portfolio">
+        <id name="name" column="name"/>
+        <property name="psw" column="psw"/>
+        <property name="email" column="email"/>
+    </class>
+    <class name="entity.UserRiskAbilityEntity" table="user_risk_ability" schema="portfolio">
+        <id name="name" column="name"/>
+        <property name="option1" column="option1"/>
+        <property name="option2" column="option2"/>
+        <property name="option3" column="option3"/>
+        <property name="option4" column="option4"/>
+        <property name="option5" column="option5"/>
+        <property name="option6" column="option6"/>
+        <property name="option7" column="option7"/>
+        <property name="option8" column="option8"/>
+        <property name="option9" column="option9"/>
+        <property name="option10" column="option10"/>
+        <property name="ability" column="ability"/>
+    </class>
+    <class name="entity.UserRiskLikeEntity" table="user_risk_like" schema="portfolio">
+        <id name="name" column="name"/>
+        <property name="option1" column="option1"/>
+        <property name="option2" column="option2"/>
+        <property name="option3" column="option3"/>
+        <property name="option4" column="option4"/>
+        <property name="option5" column="option5"/>
+        <property name="option6" column="option6"/>
+        <property name="option7" column="option7"/>
+        <property name="option8" column="option8"/>
+        <property name="mlike" column="mlike"/>
+    </class>
+    <class name="entity.ProductsEntity" table="products" schema="portfolio">
+        <id name="id" column="id">
+            <generator class="increment"/>
+        </id>
+        <property name="link" column="link"/>
+        <property name="minMoney" column="min_money"/>
+        <property name="title" column="title"/>
+        <property name="earn" column="earn"/>
+        <property name="dateStart" column="date_start"/>
+        <property name="dateEnd" column="date_end"/>
+        <property name="dateEarn" column="date_earn"/>
+        <property name="days" column="days"/>
+        <property name="surplusValue" column="surplus_value"/>
+    </class>
+    <class name="entity.GroupsEntity" table="groups" schema="portfolio">
+        <id name="id" column="id">
+            <generator class="increment"/>
+        </id>
+        <property name="agree" column="agree"/>
+    </class>
+    <class name="entity.RelationProductGroupEntity" table="relation_product_group" schema="portfolio">
+        <composite-id>
+            <key-property name="groupId" column="group_id"/>
+            <key-property name="productId" column="product_id"/>
+        </composite-id>
+    </class>
+    <class name="entity.CommendGroupsEntity" table="commend_groups" schema="portfolio">
+        <id name="commendId" column="commend_id">
+            <generator class="increment"/>
+        </id>
+        <property name="userName" column="user_name"/>
+        <property name="groupId" column="group_id"/>
+        <property name="content" column="content"/>
+    </class>
+</hibernate-mapping>

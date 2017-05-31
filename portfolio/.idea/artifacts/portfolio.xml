@@ -12,6 +12,7 @@
           <element id="library" level="project" name="mysql-connector-java-5.1.40-bin" />
           <element id="library" level="project" name="json" />
           <element id="library" level="project" name="jsoup-1.10.2" />
+          <element id="library" level="module" name="JUnit4" module-name="portfolio" />
         </element>
       </element>
     </root>

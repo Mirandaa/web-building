@@ -1,28 +1,20 @@
 package entity;
 
-import javax.persistence.*;
-
 /**
  * Created by p on 2017/5/31.
  */
-@Entity
-@Table(name = "groups", schema = "portfolio", catalog = "")
 public class GroupsEntity {
-    private String id;
+    private int id;
     private Integer agree;
 
-    @Id
-    @Column(name = "id")
-    public String getId() {
+    public int getId() {
         return id;
     }
 
-    public void setId(String id) {
+    public void setId(int id) {
         this.id = id;
     }
 
-    @Basic
-    @Column(name = "agree")
     public Integer getAgree() {
         return agree;
     }
@@ -38,7 +30,7 @@ public class GroupsEntity {
 
         GroupsEntity that = (GroupsEntity) o;
 
-        if (id != null ? !id.equals(that.id) : that.id != null) return false;
+        if (id != that.id) return false;
         if (agree != null ? !agree.equals(that.agree) : that.agree != null) return false;
 
         return true;
@@ -46,7 +38,7 @@ public class GroupsEntity {
 
     @Override
     public int hashCode() {
-        int result = id != null ? id.hashCode() : 0;
+        int result = id;
         result = 31 * result + (agree != null ? agree.hashCode() : 0);
         return result;
     }

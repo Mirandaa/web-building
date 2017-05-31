@@ -1,20 +1,22 @@
 package entity;
 
-import javax.persistence.*;
-
 /**
  * Created by p on 2017/5/31.
  */
-@Entity
-@Table(name = "commend_groups", schema = "portfolio", catalog = "")
-@IdClass(CommendGroupsEntityPK.class)
 public class CommendGroupsEntity {
+    private int commendId;
     private String userName;
-    private String groupId;
+    private Integer groupId;
     private String content;
 
-    @Id
-    @Column(name = "user_name")
+    public int getCommendId() {
+        return commendId;
+    }
+
+    public void setCommendId(int commendId) {
+        this.commendId = commendId;
+    }
+
     public String getUserName() {
         return userName;
     }
@@ -23,18 +25,14 @@ public class CommendGroupsEntity {
         this.userName = userName;
     }
 
-    @Id
-    @Column(name = "group_id")
-    public String getGroupId() {
+    public Integer getGroupId() {
         return groupId;
     }
 
-    public void setGroupId(String groupId) {
+    public void setGroupId(Integer groupId) {
         this.groupId = groupId;
     }
 
-    @Basic
-    @Column(name = "content")
     public String getContent() {
         return content;
     }
@@ -50,6 +48,7 @@ public class CommendGroupsEntity {
 
         CommendGroupsEntity that = (CommendGroupsEntity) o;
 
+        if (commendId != that.commendId) return false;
         if (userName != null ? !userName.equals(that.userName) : that.userName != null) return false;
         if (groupId != null ? !groupId.equals(that.groupId) : that.groupId != null) return false;
         if (content != null ? !content.equals(that.content) : that.content != null) return false;
@@ -59,7 +58,8 @@ public class CommendGroupsEntity {
 
     @Override
     public int hashCode() {
-        int result = userName != null ? userName.hashCode() : 0;
+        int result = commendId;
+        result = 31 * result + (userName != null ? userName.hashCode() : 0);
         result = 31 * result + (groupId != null ? groupId.hashCode() : 0);
         result = 31 * result + (content != null ? content.hashCode() : 0);
         return result;

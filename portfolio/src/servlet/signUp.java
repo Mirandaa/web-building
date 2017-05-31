@@ -1,6 +1,7 @@
 package servlet;
 
 import deal.MD5Util;
+import entity.SessionInstance;
 import entity.UserInfoEntity;
 import net.sf.json.JSONObject;
 import org.hibernate.Session;

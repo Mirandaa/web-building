@@ -8,13 +8,14 @@ function sign_in() {
     $.post("signIn",user_json,function (data) {
         var ret = JSON.parse(data);
         if(ret.res){
-            window.location.href = "index.jsp";
+            window.location.href = "index.html";
         }
         else {
-            alert(ret.msg)
+            alert(ret.msg);
         }
     });
 }
+
 function sign_up() {
     $("#sign_up_user_label").html("用户名");
     $("#sign_up_pass_label").html("输入密码");
@@ -81,7 +82,7 @@ function sign_out() {
     if (confirm("确认退出？")) {
         $.post("signOut", "", function (data) {
             alert("退出成功");
-            window.location.href = "index.jsp";
+            window.location.href = "index.html";
         });
     }
 }

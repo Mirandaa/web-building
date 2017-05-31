@@ -6,15 +6,9 @@
     <session-factory>
         <property name="connection.url">jdbc:mysql://104.236.132.15:3306/portfolio</property>
         <property name="connection.driver_class">com.mysql.jdbc.Driver</property>
-        <property name="connection.username">root</property>
-        <property name="connection.password">9595yinkai</property>
-        <mapping class="entity.UserInfoEntity"/>
-        <mapping class="entity.ProductsEntity"/>
-        <mapping class="entity.CommendGroupsEntity"/>
-        <mapping class="entity.GroupsEntity"/>
-        <mapping class="entity.RelationProductGroupEntity"/>
-        <mapping class="entity.UserRiskAbilityEntity"/>
-        <mapping class="entity.UserRiskLikeEntity"/>
+        <property name="connection.username">123456</property>
+        <property name="connection.password">123456</property>
+        <mapping resource="mapping.xml"/>
 
         <!-- DB schema will be updated if needed -->
         <!-- <property name="hbm2ddl.auto">update</property> -->

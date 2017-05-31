@@ -1,34 +1,27 @@
 package entity;
 
-import javax.persistence.*;
+import java.io.Serializable;
 
 /**
  * Created by p on 2017/5/31.
  */
-@Entity
-@Table(name = "relation_product_group", schema = "portfolio", catalog = "")
-@IdClass(RelationProductGroupEntityPK.class)
-public class RelationProductGroupEntity {
-    private String groupId;
-    private String productId;
+public class RelationProductGroupEntity implements Serializable{
+    private int groupId;
+    private int productId;
 
-    @Id
-    @Column(name = "group_id")
-    public String getGroupId() {
+    public int getGroupId() {
         return groupId;
     }
 
-    public void setGroupId(String groupId) {
+    public void setGroupId(int groupId) {
         this.groupId = groupId;
     }
 
-    @Id
-    @Column(name = "product_id")
-    public String getProductId() {
+    public int getProductId() {
         return productId;
     }
 
-    public void setProductId(String productId) {
+    public void setProductId(int productId) {
         this.productId = productId;
     }
 
@@ -39,16 +32,16 @@ public class RelationProductGroupEntity {
 
         RelationProductGroupEntity that = (RelationProductGroupEntity) o;
 
-        if (groupId != null ? !groupId.equals(that.groupId) : that.groupId != null) return false;
-        if (productId != null ? !productId.equals(that.productId) : that.productId != null) return false;
+        if (groupId != that.groupId) return false;
+        if (productId != that.productId) return false;
 
         return true;
     }
 
     @Override
     public int hashCode() {
-        int result = groupId != null ? groupId.hashCode() : 0;
-        result = 31 * result + (productId != null ? productId.hashCode() : 0);
+        int result = groupId;
+        result = 31 * result + productId;
         return result;
     }
 }

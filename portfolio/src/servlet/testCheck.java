@@ -1,7 +1,10 @@
 package servlet;
 
+import entity.SessionInstance;
 import entity.UserRiskAbilityEntity;
 import net.sf.json.JSONObject;
+import org.hibernate.Session;
+import org.hibernate.Transaction;
 
 import javax.servlet.ServletException;
 import javax.servlet.annotation.WebServlet;
@@ -23,7 +26,7 @@ public class testCheck extends HttpServlet {
         boolean isOk = false;
         try {
             UserRiskAbilityEntity entity = new UserRiskAbilityEntity();
-
+            entity.setName(request.getParameter("name"));
             int a = Integer.parseInt(request.getParameter("1"));
             risk += a;
             entity.setOption1(a);
@@ -63,6 +66,7 @@ public class testCheck extends HttpServlet {
             a = Integer.parseInt(request.getParameter("10"));
             risk += a;
             entity.setOption10(a);
+
             if (risk <= 15){
                 res = 1;
             }
@@ -78,15 +82,26 @@ public class testCheck extends HttpServlet {
             else{
                 res = 5;
             }
+            entity.setAbility(res);
+            Session session = SessionInstance.getSession();
+            Transaction transaction = session.beginTransaction();
+            session.saveOrUpdate(entity);
+            transaction.commit();
+            isOk = true;
         }catch (Exception e){
             e.printStackTrace();
             isOk = false;
         }
+        finally {
+            SessionInstance.closeSession();
 
-        JSONObject jsonObject = new JSONObject();
-        jsonObject.put("sco",risk);
-        jsonObject.put("cla",res);
-        response.getWriter().print(jsonObject);
+            JSONObject jsonObject = new JSONObject();
+            jsonObject.put("isOk",isOk);
+            jsonObject.put("sco",risk);
+            jsonObject.put("cla",res);
+            response.getWriter().print(jsonObject);
+
+        }
 
     }
 

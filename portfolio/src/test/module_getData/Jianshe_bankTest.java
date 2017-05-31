@@ -1,11 +1,12 @@
 package test.module_getData; 
 
+import entity.SessionInstance;
 import module_getData.Guangda_bank;
 import module_getData.Jianshe_bank;
 import org.junit.Test;
 import org.junit.Before; 
 import org.junit.After;
-import servlet.SessionInstance;
+
 
 /** 
 * Jianshe_bank Tester. 
@@ -32,8 +33,7 @@ public void after() throws Exception {
 @Test
 public void testGetInfo() throws Exception { 
 //TODO: Test goes here...
-    SessionInstance.getSession();
-    SessionInstance.closeSession();
+    new Guangda_bank().getInfo();
 } 
 
 

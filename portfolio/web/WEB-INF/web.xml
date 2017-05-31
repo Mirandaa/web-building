@@ -47,4 +47,13 @@
         <servlet-name>testCheck</servlet-name>
         <url-pattern>/testCheck</url-pattern>
     </servlet-mapping>
+    
+    <servlet>
+        <servlet-name>getStatus</servlet-name>
+        <servlet-class>servlet.getStatus</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>getStatus</servlet-name>
+        <url-pattern>/getStatus</url-pattern>
+    </servlet-mapping>
 </web-app>

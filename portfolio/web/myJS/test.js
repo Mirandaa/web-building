@@ -147,6 +147,7 @@ function test_check_submit() {
             }
 
         })(window);
+
         javascript:;
     });
 }

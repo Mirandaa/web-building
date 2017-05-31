@@ -1,19 +1,13 @@
 package entity;
 
-import javax.persistence.*;
-
 /**
- * Created by p on 2017/5/4.
+ * Created by p on 2017/5/31.
  */
-@Entity
-@Table(name = "user_info", schema = "portfolio", catalog = "")
 public class UserInfoEntity {
     private String name;
     private String psw;
     private String email;
 
-    @Id
-    @Column(name = "name", nullable = false, length = 20)
     public String getName() {
         return name;
     }
@@ -22,8 +16,6 @@ public class UserInfoEntity {
         this.name = name;
     }
 
-    @Basic
-    @Column(name = "psw", nullable = false, length = 32)
     public String getPsw() {
         return psw;
     }
@@ -32,8 +24,6 @@ public class UserInfoEntity {
         this.psw = psw;
     }
 
-    @Basic
-    @Column(name = "email", nullable = false, length = 30)
     public String getEmail() {
         return email;
     }

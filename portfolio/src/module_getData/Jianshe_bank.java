@@ -1,16 +1,13 @@
 package module_getData;
 
 import entity.ProductsEntity;
+import entity.SessionInstance;
 import net.sf.json.JSONArray;
 import net.sf.json.JSONObject;
 import org.hibernate.Session;
 import org.hibernate.Transaction;
-import org.hibernate.query.Query;
 import org.jsoup.Connection;
 import org.jsoup.Jsoup;
-import servlet.SessionInstance;
-
-import java.util.List;
 
 /**
  * Created by p on 2017/5/23.
@@ -31,10 +28,8 @@ public class Jianshe_bank implements Get_data{
 
             for (Object object :array) {
                 JSONObject oldJson = (JSONObject) object;
-//                System.out.println(oldJson.toString());
                 ProductsEntity entity = new ProductsEntity();
-                entity.setId(oldJson.getString("code"));
-                entity.setLink("http://finance.ccb.com/cn/finance/ProductDetails.html?PRODUCT_ID=" + entity.getId());
+                entity.setLink("http://finance.ccb.com/cn/finance/ProductDetails.html?PRODUCT_ID=" + oldJson.getString("code"));
                 String x = oldJson.getString("purFloorAmt");
                 if (x.equals("null")){
                     entity.setMinMoney(null);

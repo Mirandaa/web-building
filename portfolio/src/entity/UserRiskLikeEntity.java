@@ -1,26 +1,20 @@
 package entity;
 
-import javax.persistence.*;
-
 /**
  * Created by p on 2017/5/31.
  */
-@Entity
-@Table(name = "user_risk_like", schema = "portfolio", catalog = "")
 public class UserRiskLikeEntity {
     private String name;
-    private String option1;
-    private String option2;
-    private String option3;
-    private String option4;
-    private String option5;
-    private String option6;
-    private String option7;
-    private String option8;
+    private Integer option1;
+    private Integer option2;
+    private Integer option3;
+    private Integer option4;
+    private Integer option5;
+    private Integer option6;
+    private Integer option7;
+    private Integer option8;
     private Integer mlike;
 
-    @Id
-    @Column(name = "name")
     public String getName() {
         return name;
     }
@@ -29,88 +23,70 @@ public class UserRiskLikeEntity {
         this.name = name;
     }
 
-    @Basic
-    @Column(name = "option1")
-    public String getOption1() {
+    public Integer getOption1() {
         return option1;
     }
 
-    public void setOption1(String option1) {
+    public void setOption1(Integer option1) {
         this.option1 = option1;
     }
 
-    @Basic
-    @Column(name = "option2")
-    public String getOption2() {
+    public Integer getOption2() {
         return option2;
     }
 
-    public void setOption2(String option2) {
+    public void setOption2(Integer option2) {
         this.option2 = option2;
     }
 
-    @Basic
-    @Column(name = "option3")
-    public String getOption3() {
+    public Integer getOption3() {
         return option3;
     }
 
-    public void setOption3(String option3) {
+    public void setOption3(Integer option3) {
         this.option3 = option3;
     }
 
-    @Basic
-    @Column(name = "option4")
-    public String getOption4() {
+    public Integer getOption4() {
         return option4;
     }
 
-    public void setOption4(String option4) {
+    public void setOption4(Integer option4) {
         this.option4 = option4;
     }
 
-    @Basic
-    @Column(name = "option5")
-    public String getOption5() {
+    public Integer getOption5() {
         return option5;
     }
 
-    public void setOption5(String option5) {
+    public void setOption5(Integer option5) {
         this.option5 = option5;
     }
 
-    @Basic
-    @Column(name = "option6")
-    public String getOption6() {
+    public Integer getOption6() {
         return option6;
     }
 
-    public void setOption6(String option6) {
+    public void setOption6(Integer option6) {
         this.option6 = option6;
     }
 
-    @Basic
-    @Column(name = "option7")
-    public String getOption7() {
+    public Integer getOption7() {
         return option7;
     }
 
-    public void setOption7(String option7) {
+    public void setOption7(Integer option7) {
         this.option7 = option7;
     }
 
-    @Basic
-    @Column(name = "option8")
-    public String getOption8() {
+    public Integer getOption8() {
         return option8;
     }
 
-    public void setOption8(String option8) {
+    public void setOption8(Integer option8) {
         this.option8 = option8;
     }
 
-    @Basic
-    @Column(name = "mlike")
     public Integer getMlike() {
         return mlike;
     }

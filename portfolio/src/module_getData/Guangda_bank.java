@@ -1,13 +1,13 @@
 package module_getData;
 
 import entity.ProductsEntity;
+import entity.SessionInstance;
 import net.sf.json.JSONArray;
 import net.sf.json.JSONObject;
 import org.hibernate.Session;
 import org.hibernate.Transaction;
 import org.jsoup.Connection;
 import org.jsoup.Jsoup;
-import servlet.SessionInstance;
 
 import java.io.IOException;
 import java.text.DateFormat;
@@ -34,8 +34,7 @@ public class Guangda_bank implements Get_data {
             for (Object object : array) {
                 JSONObject oldJson = (JSONObject) object;
                 ProductsEntity entity = new ProductsEntity();
-                entity.setId(oldJson.getString("PrdCode"));
-                entity.setLink("http://www.cmbchina.com/cfweb/personal/productdetail.aspx?code=" + entity.getId());
+                entity.setLink("http://www.cmbchina.com/cfweb/personal/productdetail.aspx?code=" + oldJson.getString("PrdCode"));
                 //得到最小投资金额
                 String x = oldJson.getString("InitMoney");
                 if (x.equals("null")){

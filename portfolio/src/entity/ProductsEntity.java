@@ -1,14 +1,10 @@
 package entity;
 
-import javax.persistence.*;
-
 /**
- * Created by p on 2017/5/24.
+ * Created by p on 2017/5/31.
  */
-@Entity
-@Table(name = "products", schema = "portfolio", catalog = "")
 public class ProductsEntity {
-    private String id;
+    private int id;
     private String link;
     private Double minMoney;
     private String title;
@@ -19,18 +15,14 @@ public class ProductsEntity {
     private Integer days;
     private Double surplusValue;
 
-    @Id
-    @Column(name = "id", nullable = false, length = 30)
-    public String getId() {
+    public int getId() {
         return id;
     }
 
-    public void setId(String id) {
+    public void setId(int id) {
         this.id = id;
     }
 
-    @Basic
-    @Column(name = "link", nullable = true, length = 100)
     public String getLink() {
         return link;
     }
@@ -39,8 +31,6 @@ public class ProductsEntity {
         this.link = link;
     }
 
-    @Basic
-    @Column(name = "min_money", nullable = true, precision = 0)
     public Double getMinMoney() {
         return minMoney;
     }
@@ -49,8 +39,6 @@ public class ProductsEntity {
         this.minMoney = minMoney;
     }
 
-    @Basic
-    @Column(name = "title", nullable = true, length = -1)
     public String getTitle() {
         return title;
     }
@@ -59,8 +47,6 @@ public class ProductsEntity {
         this.title = title;
     }
 
-    @Basic
-    @Column(name = "earn", nullable = true, precision = 0)
     public Double getEarn() {
         return earn;
     }
@@ -69,8 +55,6 @@ public class ProductsEntity {
         this.earn = earn;
     }
 
-    @Basic
-    @Column(name = "date_start", nullable = true, length = 20)
     public String getDateStart() {
         return dateStart;
     }
@@ -79,8 +63,6 @@ public class ProductsEntity {
         this.dateStart = dateStart;
     }
 
-    @Basic
-    @Column(name = "date_end", nullable = true, length = 20)
     public String getDateEnd() {
         return dateEnd;
     }
@@ -89,8 +71,6 @@ public class ProductsEntity {
         this.dateEnd = dateEnd;
     }
 
-    @Basic
-    @Column(name = "date_earn", nullable = true, length = 20)
     public String getDateEarn() {
         return dateEarn;
     }
@@ -99,8 +79,6 @@ public class ProductsEntity {
         this.dateEarn = dateEarn;
     }
 
-    @Basic
-    @Column(name = "days", nullable = true)
     public Integer getDays() {
         return days;
     }
@@ -109,8 +87,6 @@ public class ProductsEntity {
         this.days = days;
     }
 
-    @Basic
-    @Column(name = "surplus_value", nullable = true, precision = 0)
     public Double getSurplusValue() {
         return surplusValue;
     }
@@ -126,7 +102,7 @@ public class ProductsEntity {
 
         ProductsEntity entity = (ProductsEntity) o;
 
-        if (id != null ? !id.equals(entity.id) : entity.id != null) return false;
+        if (id != entity.id) return false;
         if (link != null ? !link.equals(entity.link) : entity.link != null) return false;
         if (minMoney != null ? !minMoney.equals(entity.minMoney) : entity.minMoney != null) return false;
         if (title != null ? !title.equals(entity.title) : entity.title != null) return false;
@@ -143,7 +119,7 @@ public class ProductsEntity {
 
     @Override
     public int hashCode() {
-        int result = id != null ? id.hashCode() : 0;
+        int result = id;
         result = 31 * result + (link != null ? link.hashCode() : 0);
         result = 31 * result + (minMoney != null ? minMoney.hashCode() : 0);
         result = 31 * result + (title != null ? title.hashCode() : 0);
