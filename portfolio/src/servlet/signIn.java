@@ -7,6 +7,7 @@ import net.sf.json.JSONObject;
 import org.hibernate.Session;
 import org.hibernate.query.Query;
 
+import javax.servlet.RequestDispatcher;
 import javax.servlet.ServletException;
 import javax.servlet.annotation.WebServlet;
 import javax.servlet.http.HttpServlet;
@@ -42,15 +43,14 @@ public class signIn extends HttpServlet {
         List<UserInfoEntity> list = (List<UserInfoEntity>)query.list();
         SessionInstance.closeSession();
         if (list.size() == 0){
-            data = "name not found";
+            data = "该用户名不存在，请核实";
         }
         else {
             if (!psw.equals(list.get(0).getPsw())){
-                data = "psw is error";
+                data = "密码错误，请重新登录";
             }
             else {
                 request.getSession().setAttribute("user",list.get(0));
-                data = "success";
                 login = true;
             }
         }
@@ -58,9 +58,14 @@ public class signIn extends HttpServlet {
         jsonObject.put("res",login);
         jsonObject.put("msg",data);
         response.getWriter().print(jsonObject);
+
     }
 
     protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
-        response.getWriter().write("123466");
+//        response.setContentType("text/html; charset=UTF-8");
+//        response.setHeader("Access-Control-Allow-Origin","*");
+//        RequestDispatcher dispatcher = request.getRequestDispatcher("index.html");
+//        dispatcher.forward(request, response);
+        doPost(request,response);
     }
 }

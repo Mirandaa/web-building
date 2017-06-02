@@ -6,7 +6,7 @@ $(document).ready(
     $.post("getStatus",null,function (data) {
         var res = JSON.parse(data);
         if(res.isOk){
-            $("#signStatus").html("<a onclick='sign_out()'>" + res.name + "/退出登录</a>");
+            $("#signStatus").html("<a href='sign_out()'>" + res.name + "/退出登录</a>");
         }
         else {
             $("#signStatus").html("<a href='sign_in.html'>登录／注册</a>")

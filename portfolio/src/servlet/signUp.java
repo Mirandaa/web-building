@@ -47,10 +47,9 @@ public class signUp extends HttpServlet {
             session.save(entity);
             transaction.commit();
             sign = true;
-            data = "sign up success";
         }
         else {
-            data = "the name repeat";
+            data = "该用户名已被使用";
         }
         SessionInstance.closeSession();
         JSONObject jsonObject = new JSONObject();

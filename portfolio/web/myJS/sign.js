@@ -12,8 +12,12 @@ function sign_in() {
         }
         else {
             alert(ret.msg);
+            $("#sign_in").attr("disabled",false);
+            $("#sign_in").val("登录");
         }
     });
+    $("#sign_in").attr("disabled",true);
+    $("#sign_in").val("正在登录...");
 }
 
 function sign_up() {
@@ -21,7 +25,7 @@ function sign_up() {
     $("#sign_up_pass_label").html("输入密码");
     $("#sign_up_verify_pass_label").html("再次输入密码");
     $("#sign_up_email_label").html("邮箱");
-    var user_info = {}
+    var user_info = {};
 
     user_info["name"] = $("#sign_up_user").val();
     if (user_info["name"] == ""){
@@ -67,9 +71,13 @@ function sign_up() {
                     window.location.href = "sign_in.html";
             }
             else {
-                alert(ret.msg)
+                alert(ret.msg);
+                $("#sign_up").attr("disabled",false);
+                $("#sign_up").val("注册")
             }
-        })
+        });
+        $("#sign_up").attr("disabled",true);
+        $("#sign_up").val("正在注册...")
     }
     else {
         $("#sign_up_verify_pass_label").html("再次输入密码(两次密码不匹配)");
