@@ -1,6 +1,7 @@
 package servlet;
 
 import entity.SessionInstance;
+import entity.UserInfoEntity;
 import entity.UserRiskAbilityEntity;
 import net.sf.json.JSONObject;
 import org.hibernate.Session;
@@ -24,9 +25,11 @@ public class testCheck extends HttpServlet {
         int risk = 0;
         int res = 1;
         boolean isOk = false;
+        String msg = "";
         try {
             UserRiskAbilityEntity entity = new UserRiskAbilityEntity();
-            entity.setName(request.getParameter("name"));
+            UserInfoEntity infoEntity = (UserInfoEntity)request.getSession().getAttribute("user");
+            entity.setName(infoEntity.getName());
             int a = Integer.parseInt(request.getParameter("1"));
             risk += a;
             entity.setOption1(a);
@@ -91,16 +94,14 @@ public class testCheck extends HttpServlet {
         }catch (Exception e){
             e.printStackTrace();
             isOk = false;
+            msg = "请先登录~";
         }
         finally {
             SessionInstance.closeSession();
-
             JSONObject jsonObject = new JSONObject();
             jsonObject.put("isOk",isOk);
-            jsonObject.put("sco",risk);
-            jsonObject.put("cla",res);
+            jsonObject.put("msg",msg);
             response.getWriter().print(jsonObject);
-
         }
 
     }

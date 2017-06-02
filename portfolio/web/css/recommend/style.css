@@ -1,0 +1,299 @@
+/*
+Template Name: Flat Lab Dashboard build with Bootstrap v3.0
+Template Version: 1.0
+Author: Mosaddek Hossain
+Website: http://thevectorlab.net/
+*/
+
+/* Import fonts */
+@import url(http://fonts.googleapis.com/css?family=Open+Sans:400,300,300italic,400italic,600,600italic,700,700italic,800,800italic);
+
+ul li {
+    list-style: none;
+}
+
+a, a:hover, a:focus {
+    text-decoration: none;
+    outline: none;
+    cursor: pointer;
+}
+
+::selection {
+    background: #FF6C60;
+    color: #fff;
+}
+::-moz-selection {
+    background: #FF6C60;
+    color: #fff;
+}
+
+#container {
+    width: 100%;
+    height: 100%;
+}
+
+/*sidebar navigation*/
+
+#sidebar {
+    width: 180px;
+    height: 100%;
+    position: absolute;
+    background: #2a3542;
+}
+
+.left-side {
+    width: 180px;
+    float: left;
+    height: auto;
+}
+
+.nav-collapse .user{
+    text-align: center;
+}
+
+.nav-collapse .user .image{
+    border-radius: 50%;
+    width: 80px;
+    height: 80px;
+    overflow: hidden;
+    margin: 20px auto;
+}
+
+.nav-collapse .user .image img{
+    vertical-align: middle;
+    width: auto;
+    height: 80px;
+}
+
+ul.sidebar-menu {
+    margin-top: 10px;
+}
+
+ul.sidebar-menu li ul.sub li{
+    background: #35404D;
+    margin-bottom: 0;
+    margin-left: 0;
+    margin-right: 0;
+}
+
+ul.sidebar-menu li{
+    line-height: 20px !important;
+    margin-bottom: 5px;
+    margin-left:10px;
+    margin-right:10px;
+}
+
+ul.sidebar-menu li a{
+    color: #8b9199;
+    text-decoration: none;
+    display: block;
+    padding: 15px 0 15px 10px;
+    font-size: 12px;
+    outline: none;
+    -webkit-transition: all 0.3s ease;
+    -moz-transition: all 0.3s ease;
+    -o-transition: all 0.3s ease;
+    -ms-transition: all 0.3s ease;
+    transition: all 0.3s ease;
+}
+
+ul.sidebar-menu li.active a, ul.sidebar-menu li a:hover, ul.sidebar-menu li a:focus {
+    background: #35404d;
+    color: #fff;
+    display: block;
+    border-radius: 4px;
+    -webkit-border-radius: 4px;
+
+    -webkit-transition: all 0.3s ease;
+    -moz-transition: all 0.3s ease;
+    -o-transition: all 0.3s ease;
+    -ms-transition: all 0.3s ease;
+    transition: all 0.3s ease;
+}
+
+
+ul.sidebar-menu li a i {
+    font-size: 15px;
+    padding-right: 6px;
+}
+
+ul.sidebar-menu li a:hover i, ul.sidebar-menu li a:focus i {
+    color: #FF6C60;
+}
+
+ul.sidebar-menu li.active a i {
+    color: #FF6C60;
+}
+
+
+/*right-side*/
+
+.bio-desk {
+    width: 60%;
+}
+
+.bio-desk h4 {
+    font-size: 15px;
+    font-weight:400;
+}
+
+.bio-desk h4.terques {
+    color: #48c7ec;
+}
+
+.right-side {
+    height: 500px;
+    width: 75%;
+    margin-left: 220px;
+    float: left;
+}
+
+.right-side .index {
+    display: block;
+    text-align: center;
+    line-height: 50px;
+    margin: 0 auto;
+    margin-top: 20%;
+    font-size: 35px;
+    color: grey;
+    font-weight: normal;
+}
+
+.right-side .section-hr {
+    width: 50%;
+    height: 3px;
+    border: none;
+    border-top: 3px solid #48c7ec;
+}
+
+.page1 {
+    width: 100%;
+}
+
+/*风险承担能力测评*/
+.result h3 {
+    text-align: center;
+    margin: 20px auto;
+}
+
+.result p {
+    font-size: 16px;
+    color: #000;
+    line-height: 40px;
+}
+
+.result p strong {
+    color: #48c7ec;
+}
+
+.result ul {
+    font-size: 15px;
+}
+.result ul li {
+    padding: 5px 0;
+}
+
+.result ul li strong {
+    color: #48c7ec;
+}
+
+.result ul li i {
+    width: 25px;
+}
+
+.result p i {
+    width: 25px;
+}
+
+/*登录注册按钮*/
+.right-side-unlog {
+    height: 300px;
+    width: 100%;
+}
+
+.right-side-unlog .index {
+    display: block;
+    text-align: center;
+    line-height: 50px;
+    margin: 0 auto;
+    margin-top: 10%;
+    font-size: 35px;
+    color: grey;
+    font-weight: normal;
+}
+
+.right-side-unlog a {
+    display: block;
+    margin: 25px auto;
+}
+
+.right-side-unlog a .button {
+    margin: 0 auto;
+    padding: 0;
+    width: 200px;
+    height: 50px;
+    border: 2px solid #48c7ec;
+    border-radius: 40px;
+    background: transparent;
+    color: #48c7ec;
+    letter-spacing: 1px;
+    font-size: 18px;
+    font-family: 'Montserrat', sans-serif;
+    cursor: pointer;
+    text-transform: none;
+    line-height: normal;
+}
+
+/*登录后未测风险*/
+.right-side-untest {
+    height: 500px;
+    width: 100%;
+    float: left;
+    margin: 0 auto;
+}
+
+.right-side-untest h3{
+    text-align: center;
+    margin: 20px auto;
+}
+
+.right-side-untest .index {
+    display: block;
+    text-align: center;
+    line-height: 50px;
+    margin: 0 auto;
+    margin-top: 10%;
+    font-size: 25px;
+    color: grey;
+    font-weight: normal;
+}
+
+.right-side-untest a {
+    display: block;
+    margin: 25px auto;
+}
+
+.sidebar-menu li .active {
+    background: #35404d;
+    color: #fff;
+    display: block;
+    border-radius: 4px;
+    -webkit-border-radius: 4px;
+}
+
+.right-side-untest a .button {
+    margin: 0 auto;
+    padding: 0;
+    width: 200px;
+    height: 50px;
+    border: 2px solid #48c7ec;
+    border-radius: 40px;
+    background: transparent;
+    color: #48c7ec;
+    letter-spacing: 1px;
+    font-size: 18px;
+    font-family: 'Montserrat', sans-serif;
+    cursor: pointer;
+    text-transform: none;
+    line-height: normal;
+}

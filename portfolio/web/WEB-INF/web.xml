@@ -56,4 +56,13 @@
         <servlet-name>getStatus</servlet-name>
         <url-pattern>/getStatus</url-pattern>
     </servlet-mapping>
+
+    <servlet>
+        <servlet-name>getTestStatus</servlet-name>
+        <servlet-class>servlet.getTestStatus</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>getTestStatus</servlet-name>
+        <url-pattern>/getTestStatus</url-pattern>
+    </servlet-mapping>
 </web-app>

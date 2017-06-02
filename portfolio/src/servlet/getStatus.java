@@ -13,7 +13,7 @@ import java.io.IOException;
 /**
  * Created by p on 2017/5/31.
  */
-@WebServlet(name = "getStatus")
+@WebServlet(name = "setStatus")
 public class getStatus extends HttpServlet {
     protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
         response.setContentType("text/javaScript; charset=UTF-8");
@@ -33,13 +33,9 @@ public class getStatus extends HttpServlet {
             object.put("isOk",isOk);
             if (isOk){
                 object.put("name",entity.getName());
-                object.put("psw",entity.getPsw());
-                object.put("email",entity.getEmail());
             }
             else {
                 object.put("name",null);
-                object.put("psw",null);
-                object.put("email",null);
             }
             response.getWriter().write(object.toString());
         }

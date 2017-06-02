@@ -29,13 +29,13 @@
             </div>
             <div class="col-md-8 menu-column">
                 <nav class="menuzord" id="main_menu">
-                   <ul class="menuzord-menu">
-                        <li><a href="index.html">首页</a></li>
-						<li class="active"><a href="about.html">新手指引</a></li>
-                        <li><a href="service.html">组合排行榜</a></li>
-						<li><a href="project.html">组合推荐</a></li>
-						<li><a href="shop.html">股票行情</a></li>
-                        <li><a href="sign_in.html">登录／注册</a></li>
+                    <ul class="menuzord-menu">
+                        <li ><a href="index.html">首页</a></li>
+                        <li id="guide" class="active"><a href="about.html">新手指引</a></li>
+                        <li id="ranking"><a href="service.html">组合排行榜</a></li>
+                        <li id="recommend"><a href="project.html">组合推荐</a></li>
+                        <li id="details"><a href="shop.html">股票行情</a></li>
+                        <li id="sign"><a href="sign_in.html">登录／注册</a></li>
                     </ul><!-- End of .menuzord-menu -->
                 </nav> <!-- End of #main_menu -->
             </div>
@@ -771,6 +771,11 @@
     <script id="map-script" src="js/default-map.js"></script>
     <script src="js/custom.js"></script>
 
+    <script src="myJS/sign.js"></script>
+    <script src="myJS/ready.js"></script>
+    <script>
+        $(document).ready(setStatus());
+    </script>
 </div>
     
 </body>

@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <link rel="icon" href="favicon.ico">
-    <title>组财｜为您打造最优投资方案</title> 
+    <title>组财｜为您打造最优投资方案</title>
 
     <!-- mobile responsive meta -->
     <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -32,11 +32,11 @@
                 <nav class="menuzord" id="main_menu">
                    <ul class="menuzord-menu">
                         <li class="active"><a href="index.html">首页</a></li>
-												<li><a href="about.html">新手指引</a></li>
-                        <li><a href="service.html">组合排行榜</a></li>
-												<li><a href="project.html">组合推荐</a></li>
-												<li><a href="shop.html">股票行情</a></li>
-                        <li id="signStatus"><a href="sign_in.html">登录／注册</a></li>
+                        <li id="guide"><a href="about.html">新手指引</a></li>
+                        <li id="ranking"><a href="service.html">组合排行榜</a></li>
+                        <li id="recommend"><a href="project.html">组合推荐</a></li>
+                        <li id="details"><a href="shop.html">股票行情</a></li>
+                        <li id="sign"><a href="sign_in.html">登录／注册</a></li>
                     </ul><!-- End of .menuzord-menu -->
                 </nav> <!-- End of #main_menu -->
             </div>
@@ -567,9 +567,10 @@
     <script src="js/jquery.circliful.min.js"></script>
 
     <script src="myJS/sign.js"></script>
-    <script src="myJS/index.js"></script>
+    <script src="myJS/ready.js"></script>
     <script>
-        $(document).ready(getNews())
+        $(document).ready(getNews());
+        $(document).ready(setStatus());
     </script>
 </div>
     

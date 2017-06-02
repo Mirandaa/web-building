@@ -33,6 +33,8 @@ public void after() throws Exception {
 @Test
 public void testGetInfo() throws Exception { 
 //TODO: Test goes here...
+    SessionInstance.getSession();
+    SessionInstance.closeSession();
 } 
 
 
