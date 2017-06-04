@@ -8,10 +8,12 @@ function setStatus() {
         if(res.isOk){
             $("#sign").html("<a href='#' onclick='sign_out()'>" + res.name + "/退出登录</a>");
             $("#recommend").html("<a href='project.html'>"  + "组合推荐</a>");
+            $("#name").text(res.name);
         }
         else {
             $("#sign").html("<a href='sign_in.html'>登录／注册</a>");
             $("#recommend").html("<a href='project_unlog.html'>"  + "组合推荐</a>");
+            $("#name").text("用户名");
         }
     });
 }
