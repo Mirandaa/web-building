@@ -9,8 +9,9 @@
       <case-sensitivity plain-identifiers="exact" quoted-identifiers="exact" />
       <secret-storage>master_key</secret-storage>
       <user-name>123456</user-name>
-      <introspection-scope>portfolio:</introspection-scope>
+      <introspection-schemas>*:portfolio|portfolio:</introspection-schemas>
       <resolve-scope>portfolio:</resolve-scope>
+      <unqualified-resolve-schemas>portfolio:</unqualified-resolve-schemas>
     </data-source>
   </component>
 </project>
