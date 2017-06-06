@@ -2,26 +2,12 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="11908dab-9e04-422a-94fa-de0f7552978d" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/servlet/getGroups.java" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/portfolio/module_getData/Guangda_bank.class" afterPath="" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/artifacts/portfolio/portfolio.war" afterPath="$PROJECT_DIR$/out/artifacts/portfolio/portfolio.war" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/portfolio/entity/GroupsEntity.class" afterPath="$PROJECT_DIR$/out/production/portfolio/entity/GroupsEntity.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/portfolio/entity/ProductsEntity.class" afterPath="$PROJECT_DIR$/out/production/portfolio/entity/ProductsEntity.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/portfolio/module_getData/Jianshe_bank.class" afterPath="$PROJECT_DIR$/out/production/portfolio/module_getData/Jianshe_bank.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/portfolio/test/module_getData/Jianshe_bankTest.class" afterPath="$PROJECT_DIR$/out/production/portfolio/test/module_getData/Jianshe_bankTest.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/dataSources/ce02384d-e900-482b-9b4c-e9f02d820597.xml" afterPath="$PROJECT_DIR$/.idea/dataSources/ce02384d-e900-482b-9b4c-e9f02d820597.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/entity/GroupsEntity.java" afterPath="$PROJECT_DIR$/src/entity/GroupsEntity.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/entity/ProductsEntity.java" afterPath="$PROJECT_DIR$/src/entity/ProductsEntity.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/mapping.xml" afterPath="$PROJECT_DIR$/src/mapping.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/module_getData/Jianshe_bank.java" afterPath="$PROJECT_DIR$/src/module_getData/Jianshe_bank.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/test/module_getData/Jianshe_bankTest.java" afterPath="$PROJECT_DIR$/src/test/module_getData/Jianshe_bankTest.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/WEB-INF/web.xml" afterPath="$PROJECT_DIR$/web/WEB-INF/web.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/linkpage2.html" afterPath="$PROJECT_DIR$/web/linkpage2.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/myJS/ready.js" afterPath="$PROJECT_DIR$/web/myJS/ready.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/myJS/sign.js" afterPath="$PROJECT_DIR$/web/myJS/sign.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/project.html" afterPath="$PROJECT_DIR$/web/project.html" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/module_getData/Guangda_bank.java" afterPath="$PROJECT_DIR$/src/module_getData/Zhaoshang_bank.java" />
     </list>
     <ignored path="portfolio.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -1016,7 +1002,7 @@
       <workItem from="1496679400615" duration="233000" />
       <workItem from="1496679695832" duration="671000" />
       <workItem from="1496722185575" duration="3859000" />
-      <workItem from="1496727966740" duration="7629000" />
+      <workItem from="1496727966740" duration="7716000" />
     </task>
     <task id="LOCAL-00001" summary="登录注册退出，利用session">
       <created>1494127139673</created>
@@ -1060,7 +1046,14 @@
       <option name="project" value="LOCAL" />
       <updated>1496680325094</updated>
     </task>
-    <option name="localTasksCounter" value="7" />
+    <task id="LOCAL-00007" summary="组合推荐界面">
+      <created>1496735968355</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1496735968355</updated>
+    </task>
+    <option name="localTasksCounter" value="8" />
     <servers />
   </component>
   <component name="TestHistory">
@@ -1096,7 +1089,7 @@
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="170018000" />
+    <option name="totallyTimeSpent" value="170105000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
