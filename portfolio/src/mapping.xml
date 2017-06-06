@@ -47,6 +47,8 @@
         <property name="dateEnd" column="date_end"/>
         <property name="dateEarn" column="date_earn"/>
         <property name="days" column="days"/>
+        <property name="risk" column="risk"/>
+        <property name="guarantee" column="isGuaranteed"/>
         <property name="surplusValue" column="surplus_value"/>
     </class>
     <class name="entity.GroupsEntity" table="groups" schema="portfolio">
@@ -54,6 +56,11 @@
             <generator class="increment"/>
         </id>
         <property name="agree" column="agree"/>
+        <property name="name" column="name"/>
+        <property name="type" column="type"/>
+        <property name="days" column="days"/>
+        <property name="yearRate" column="yearRate"/>
+        <property name="minMoney" column="minMoney"/>
     </class>
     <class name="entity.RelationProductGroupEntity" table="relation_product_group" schema="portfolio">
         <composite-id>

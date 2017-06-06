@@ -13,6 +13,8 @@ public class ProductsEntity {
     private String dateEnd;
     private String dateEarn;
     private Integer days;
+    private Integer risk;
+    private Boolean guarantee;
     private Double surplusValue;
 
     public int getId() {
@@ -85,6 +87,22 @@ public class ProductsEntity {
 
     public void setDays(Integer days) {
         this.days = days;
+    }
+
+    public Integer getRisk() {
+        return risk;
+    }
+
+    public void setRisk(Integer risk) {
+        this.risk = risk;
+    }
+
+    public Boolean getGuarantee() {
+        return guarantee;
+    }
+
+    public void setGuarantee(Boolean guarantee) {
+        this.guarantee = guarantee;
     }
 
     public Double getSurplusValue() {

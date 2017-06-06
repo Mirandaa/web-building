@@ -1,7 +1,6 @@
 package test.module_getData; 
 
 import entity.SessionInstance;
-import module_getData.Guangda_bank;
 import module_getData.Jianshe_bank;
 import org.junit.Test;
 import org.junit.Before; 

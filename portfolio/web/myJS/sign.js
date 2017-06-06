@@ -91,6 +91,7 @@ function sign_out() {
         $.post("signOut", "", function (data) {
             alert("退出成功");
             window.location.href = "index.html";
+            window.localStorage.clear();
         });
     }
 }

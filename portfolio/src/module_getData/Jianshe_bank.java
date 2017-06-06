@@ -44,6 +44,8 @@ public class Jianshe_bank implements Get_data{
                 entity.setDateEnd(oldJson.getString("collEndDate"));
                 entity.setDateEarn(oldJson.getString("investBgnDate"));
                 entity.setDays(oldJson.getInt("investPeriod"));
+                entity.setRisk(oldJson.getInt("riskLevel"));
+                entity.setGuarantee(oldJson.getInt("yieldSpec") > 0);
                 entity.setSurplusValue(null);
                 Session session = SessionInstance.getSession();
                 Transaction transaction = session.beginTransaction();

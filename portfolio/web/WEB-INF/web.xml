@@ -65,4 +65,13 @@
         <servlet-name>getTestStatus</servlet-name>
         <url-pattern>/getTestStatus</url-pattern>
     </servlet-mapping>
+
+    <servlet>
+        <servlet-name>getGroups</servlet-name>
+        <servlet-class>servlet.getGroups</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>getGroups</servlet-name>
+        <url-pattern>/getGroups</url-pattern>
+    </servlet-mapping>
 </web-app>
