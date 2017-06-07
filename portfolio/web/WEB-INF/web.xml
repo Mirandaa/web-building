@@ -74,4 +74,13 @@
         <servlet-name>getGroups</servlet-name>
         <url-pattern>/getGroups</url-pattern>
     </servlet-mapping>
+
+    <servlet>
+        <servlet-name>group</servlet-name>
+        <servlet-class>servlet.group</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>group</servlet-name>
+        <url-pattern>/group</url-pattern>
+    </servlet-mapping>
 </web-app>

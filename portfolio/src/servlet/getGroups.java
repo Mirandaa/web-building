@@ -30,7 +30,7 @@ public class getGroups extends HttpServlet {
             Query query1 = session.createQuery(query);
             List<GroupsEntity> list = (List<GroupsEntity>) query1.list();
             System.out.println(list.size());
-            res = list.subList(0,list.size()>10?10:list.size());
+            res = list.subList(0,list.size()>6?6:list.size());
             isOk = true;
         }
         catch (Exception e){
@@ -38,6 +38,7 @@ public class getGroups extends HttpServlet {
             isOk = false;
         }
         finally {
+            SessionInstance.closeSession();
             JSONObject object = new JSONObject();
             object.put("isOk",isOk);
             object.put("count",res==null?0:res.size());

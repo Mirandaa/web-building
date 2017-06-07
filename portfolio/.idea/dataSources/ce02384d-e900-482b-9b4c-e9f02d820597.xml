@@ -91,7 +91,7 @@
     </column>
     <column id="29" parent="8" name="minMoney">
       <Position>7</Position>
-      <DataType>int(11)|0</DataType>
+      <DataType>double|0</DataType>
       <DefaultExpression>&apos;0&apos;</DefaultExpression>
     </column>
     <key id="30" parent="8" name="PRIMARY">
@@ -151,33 +151,38 @@
       <DataType>tinyint(1)|0</DataType>
       <DefaultExpression>&apos;0&apos;</DefaultExpression>
     </column>
-    <key id="43" parent="9" name="PRIMARY">
+    <column id="43" parent="9" name="save">
+      <Position>13</Position>
+      <DataType>tinyint(1)|0</DataType>
+      <DefaultExpression>&apos;0&apos;</DefaultExpression>
+    </column>
+    <key id="44" parent="9" name="PRIMARY">
       <NameSurrogate>1</NameSurrogate>
       <ColNames>id</ColNames>
       <Primary>1</Primary>
     </key>
-    <column id="44" parent="10" name="group_id">
+    <column id="45" parent="10" name="group_id">
       <Position>1</Position>
       <DataType>int(11)|0</DataType>
       <NotNull>1</NotNull>
       <DefaultExpression>&apos;0&apos;</DefaultExpression>
     </column>
-    <column id="45" parent="10" name="product_id">
+    <column id="46" parent="10" name="product_id">
       <Position>2</Position>
       <DataType>int(11)|0</DataType>
       <NotNull>1</NotNull>
       <DefaultExpression>&apos;0&apos;</DefaultExpression>
     </column>
-    <index id="46" parent="10" name="product_id">
+    <index id="47" parent="10" name="product_id">
       <ColNames>product_id</ColNames>
     </index>
-    <key id="47" parent="10" name="PRIMARY">
+    <key id="48" parent="10" name="PRIMARY">
       <NameSurrogate>1</NameSurrogate>
       <ColNames>group_id
 product_id</ColNames>
       <Primary>1</Primary>
     </key>
-    <foreign-key id="48" parent="10" name="relation_product_group_ibfk_1">
+    <foreign-key id="49" parent="10" name="relation_product_group_ibfk_1">
       <ColNames>group_id</ColNames>
       <RefSchemaName>portfolio</RefSchemaName>
       <RefTableName>groups</RefTableName>
@@ -185,7 +190,7 @@ product_id</ColNames>
       <RefColNames>id</RefColNames>
       <OnDelete>cascade</OnDelete>
     </foreign-key>
-    <foreign-key id="49" parent="10" name="relation_product_group_ibfk_2">
+    <foreign-key id="50" parent="10" name="relation_product_group_ibfk_2">
       <ColNames>product_id</ColNames>
       <RefSchemaName>portfolio</RefSchemaName>
       <RefTableName>products</RefTableName>
@@ -193,81 +198,81 @@ product_id</ColNames>
       <RefColNames>id</RefColNames>
       <OnDelete>cascade</OnDelete>
     </foreign-key>
-    <column id="50" parent="11" name="name">
+    <column id="51" parent="11" name="name">
       <Position>1</Position>
       <DataType>varchar(20)|0</DataType>
       <NotNull>1</NotNull>
     </column>
-    <column id="51" parent="11" name="psw">
+    <column id="52" parent="11" name="psw">
       <Position>2</Position>
       <DataType>varchar(32)|0</DataType>
       <NotNull>1</NotNull>
     </column>
-    <column id="52" parent="11" name="email">
+    <column id="53" parent="11" name="email">
       <Position>3</Position>
       <DataType>varchar(30)|0</DataType>
       <NotNull>1</NotNull>
     </column>
-    <key id="53" parent="11" name="PRIMARY">
+    <key id="54" parent="11" name="PRIMARY">
       <NameSurrogate>1</NameSurrogate>
       <ColNames>name</ColNames>
       <Primary>1</Primary>
     </key>
-    <column id="54" parent="12" name="name">
+    <column id="55" parent="12" name="name">
       <Position>1</Position>
       <DataType>varchar(20)|0</DataType>
       <NotNull>1</NotNull>
     </column>
-    <column id="55" parent="12" name="option1">
+    <column id="56" parent="12" name="option1">
       <Position>2</Position>
       <DataType>int(11)|0</DataType>
     </column>
-    <column id="56" parent="12" name="option2">
+    <column id="57" parent="12" name="option2">
       <Position>3</Position>
       <DataType>int(11)|0</DataType>
     </column>
-    <column id="57" parent="12" name="option3">
+    <column id="58" parent="12" name="option3">
       <Position>4</Position>
       <DataType>int(11)|0</DataType>
     </column>
-    <column id="58" parent="12" name="option4">
+    <column id="59" parent="12" name="option4">
       <Position>5</Position>
       <DataType>int(11)|0</DataType>
     </column>
-    <column id="59" parent="12" name="option5">
+    <column id="60" parent="12" name="option5">
       <Position>6</Position>
       <DataType>int(11)|0</DataType>
     </column>
-    <column id="60" parent="12" name="option6">
+    <column id="61" parent="12" name="option6">
       <Position>7</Position>
       <DataType>int(11)|0</DataType>
     </column>
-    <column id="61" parent="12" name="option7">
+    <column id="62" parent="12" name="option7">
       <Position>8</Position>
       <DataType>int(11)|0</DataType>
     </column>
-    <column id="62" parent="12" name="option8">
+    <column id="63" parent="12" name="option8">
       <Position>9</Position>
       <DataType>int(11)|0</DataType>
     </column>
-    <column id="63" parent="12" name="option9">
+    <column id="64" parent="12" name="option9">
       <Position>10</Position>
       <DataType>int(11)|0</DataType>
     </column>
-    <column id="64" parent="12" name="option10">
+    <column id="65" parent="12" name="option10">
       <Position>11</Position>
       <DataType>int(11)|0</DataType>
     </column>
-    <column id="65" parent="12" name="ability">
+    <column id="66" parent="12" name="ability">
       <Position>12</Position>
       <DataType>int(11)|0</DataType>
     </column>
-    <key id="66" parent="12" name="PRIMARY">
+    <key id="67" parent="12" name="PRIMARY">
       <NameSurrogate>1</NameSurrogate>
       <ColNames>name</ColNames>
       <Primary>1</Primary>
     </key>
-    <foreign-key id="67" parent="12" name="user_risk_ability_ibfk_1">
+    <foreign-key id="68" parent="12" name="user_risk_ability_ibfk_1">
       <ColNames>name</ColNames>
       <RefSchemaName>portfolio</RefSchemaName>
       <RefTableName>user_info</RefTableName>
@@ -275,53 +280,53 @@ product_id</ColNames>
       <RefColNames>name</RefColNames>
       <OnDelete>cascade</OnDelete>
     </foreign-key>
-    <column id="68" parent="13" name="name">
+    <column id="69" parent="13" name="name">
       <Position>1</Position>
       <DataType>varchar(20)|0</DataType>
       <NotNull>1</NotNull>
     </column>
-    <column id="69" parent="13" name="option1">
+    <column id="70" parent="13" name="option1">
       <Position>2</Position>
       <DataType>int(11)|0</DataType>
     </column>
-    <column id="70" parent="13" name="option2">
+    <column id="71" parent="13" name="option2">
       <Position>3</Position>
       <DataType>int(11)|0</DataType>
     </column>
-    <column id="71" parent="13" name="option3">
+    <column id="72" parent="13" name="option3">
       <Position>4</Position>
       <DataType>int(11)|0</DataType>
     </column>
-    <column id="72" parent="13" name="option4">
+    <column id="73" parent="13" name="option4">
       <Position>5</Position>
       <DataType>int(11)|0</DataType>
     </column>
-    <column id="73" parent="13" name="option5">
+    <column id="74" parent="13" name="option5">
       <Position>6</Position>
       <DataType>int(11)|0</DataType>
     </column>
-    <column id="74" parent="13" name="option6">
+    <column id="75" parent="13" name="option6">
       <Position>7</Position>
       <DataType>int(11)|0</DataType>
     </column>
-    <column id="75" parent="13" name="option7">
+    <column id="76" parent="13" name="option7">
       <Position>8</Position>
       <DataType>int(11)|0</DataType>
     </column>
-    <column id="76" parent="13" name="option8">
+    <column id="77" parent="13" name="option8">
       <Position>9</Position>
       <DataType>int(11)|0</DataType>
     </column>
-    <column id="77" parent="13" name="mlike">
+    <column id="78" parent="13" name="mlike">
       <Position>10</Position>
       <DataType>int(11)|0</DataType>
     </column>
-    <key id="78" parent="13" name="PRIMARY">
+    <key id="79" parent="13" name="PRIMARY">
       <NameSurrogate>1</NameSurrogate>
       <ColNames>name</ColNames>
       <Primary>1</Primary>
     </key>
-    <foreign-key id="79" parent="13" name="user_risk_like_ibfk_1">
+    <foreign-key id="80" parent="13" name="user_risk_like_ibfk_1">
       <ColNames>name</ColNames>
       <RefSchemaName>portfolio</RefSchemaName>
       <RefTableName>user_info</RefTableName>

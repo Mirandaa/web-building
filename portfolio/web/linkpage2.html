@@ -7,32 +7,32 @@
 
 <body>
 	<select class="multiselect" id="day">
-		<option value="">30天以下</option>
-		<option value="">30-150天</option>
-		<option value="">150-365天</option>
-		<option value="">1年－3年</option>
-		<option value="">3年以上</option>
+		<option value="0">30天以下</option>
+		<option value="1">30-150天</option>
+		<option value="2">150-365天</option>
+		<option value="3">1年－3年</option>
+		<option value="4">3年以上</option>
 	</select>
 
-		<select class="multiselect" id="single">
-		<option value="">1000元以下</option>
-		<option value="">1000-5000元</option>
-		<option value="">5000-10000元</option>
-		<option value="">10000-50000元</option>
-		<option value="">50000元以上</option>
+	<select class="multiselect" id="single">
+		<option value="0">1000元以下</option>
+		<option value="1">1000-5000元</option>
+		<option value="2">5000-10000元</option>
+		<option value="3">10000-50000元</option>
+		<option value="4">50000元以上</option>
 	</select>
 
-	<a href="" class="recommend"><button class="button">提交</button></a>
+	<a href="#" class="recommend"><button class="button" onclick="submit()">提交</button></a>
 
 <div id="groupContent">
 
 </div>
 
 	<script src="js/recommend/select.jquery.js"></script>
-    <script src="myJS/ready.js"></script>
-    <script>
-        $(document).ready(getGroups());
-    </script>
+    <script src="myJS/project.js"></script>
+	<script>
+		$(document).ready(getGroups());
+	</script>
 </body>
 
 

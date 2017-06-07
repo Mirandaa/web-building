@@ -1,7 +1,7 @@
 package entity;
 
 /**
- * Created by p on 2017/5/31.
+ * Created by p on 2017/6/6.
  */
 public class ProductsEntity {
     private int id;
@@ -9,13 +9,14 @@ public class ProductsEntity {
     private Double minMoney;
     private String title;
     private Double earn;
-    private String dateStart;
-    private String dateEnd;
-    private String dateEarn;
+    private Long dateStart;
+    private Long dateEnd;
+    private Long dateEarn;
     private Integer days;
-    private Integer risk;
-    private Boolean guarantee;
     private Double surplusValue;
+    private Integer risk;
+    private Boolean guaranteed;
+    private Boolean save;
 
     public int getId() {
         return id;
@@ -57,27 +58,27 @@ public class ProductsEntity {
         this.earn = earn;
     }
 
-    public String getDateStart() {
+    public Long getDateStart() {
         return dateStart;
     }
 
-    public void setDateStart(String dateStart) {
+    public void setDateStart(Long dateStart) {
         this.dateStart = dateStart;
     }
 
-    public String getDateEnd() {
+    public Long getDateEnd() {
         return dateEnd;
     }
 
-    public void setDateEnd(String dateEnd) {
+    public void setDateEnd(Long dateEnd) {
         this.dateEnd = dateEnd;
     }
 
-    public String getDateEarn() {
+    public Long getDateEarn() {
         return dateEarn;
     }
 
-    public void setDateEarn(String dateEarn) {
+    public void setDateEarn(Long dateEarn) {
         this.dateEarn = dateEarn;
     }
 
@@ -89,22 +90,6 @@ public class ProductsEntity {
         this.days = days;
     }
 
-    public Integer getRisk() {
-        return risk;
-    }
-
-    public void setRisk(Integer risk) {
-        this.risk = risk;
-    }
-
-    public Boolean getGuarantee() {
-        return guarantee;
-    }
-
-    public void setGuarantee(Boolean guarantee) {
-        this.guarantee = guarantee;
-    }
-
     public Double getSurplusValue() {
         return surplusValue;
     }
@@ -113,24 +98,48 @@ public class ProductsEntity {
         this.surplusValue = surplusValue;
     }
 
+    public Integer getRisk() {
+        return risk;
+    }
+
+    public void setRisk(Integer risk) {
+        this.risk = risk;
+    }
+
+    public Boolean getGuaranteed() {
+        return guaranteed;
+    }
+
+    public void setGuaranteed(Boolean guaranteed) {
+        this.guaranteed = guaranteed;
+    }
+
+    public Boolean getSave() {
+        return save;
+    }
+
+    public void setSave(Boolean save) {
+        this.save = save;
+    }
+
     @Override
     public boolean equals(Object o) {
         if (this == o) return true;
         if (o == null || getClass() != o.getClass()) return false;
 
-        ProductsEntity entity = (ProductsEntity) o;
+        ProductsEntity that = (ProductsEntity) o;
 
-        if (id != entity.id) return false;
-        if (link != null ? !link.equals(entity.link) : entity.link != null) return false;
-        if (minMoney != null ? !minMoney.equals(entity.minMoney) : entity.minMoney != null) return false;
-        if (title != null ? !title.equals(entity.title) : entity.title != null) return false;
-        if (earn != null ? !earn.equals(entity.earn) : entity.earn != null) return false;
-        if (dateStart != null ? !dateStart.equals(entity.dateStart) : entity.dateStart != null) return false;
-        if (dateEnd != null ? !dateEnd.equals(entity.dateEnd) : entity.dateEnd != null) return false;
-        if (dateEarn != null ? !dateEarn.equals(entity.dateEarn) : entity.dateEarn != null) return false;
-        if (days != null ? !days.equals(entity.days) : entity.days != null) return false;
-        if (surplusValue != null ? !surplusValue.equals(entity.surplusValue) : entity.surplusValue != null)
-            return false;
+        if (id != that.id) return false;
+        if (link != null ? !link.equals(that.link) : that.link != null) return false;
+        if (minMoney != null ? !minMoney.equals(that.minMoney) : that.minMoney != null) return false;
+        if (title != null ? !title.equals(that.title) : that.title != null) return false;
+        if (earn != null ? !earn.equals(that.earn) : that.earn != null) return false;
+        if (dateStart != null ? !dateStart.equals(that.dateStart) : that.dateStart != null) return false;
+        if (dateEnd != null ? !dateEnd.equals(that.dateEnd) : that.dateEnd != null) return false;
+        if (dateEarn != null ? !dateEarn.equals(that.dateEarn) : that.dateEarn != null) return false;
+        if (days != null ? !days.equals(that.days) : that.days != null) return false;
+        if (surplusValue != null ? !surplusValue.equals(that.surplusValue) : that.surplusValue != null) return false;
+        if (risk != null ? !risk.equals(that.risk) : that.risk != null) return false;
 
         return true;
     }
@@ -147,6 +156,7 @@ public class ProductsEntity {
         result = 31 * result + (dateEarn != null ? dateEarn.hashCode() : 0);
         result = 31 * result + (days != null ? days.hashCode() : 0);
         result = 31 * result + (surplusValue != null ? surplusValue.hashCode() : 0);
+        result = 31 * result + (risk != null ? risk.hashCode() : 0);
         return result;
     }
 }

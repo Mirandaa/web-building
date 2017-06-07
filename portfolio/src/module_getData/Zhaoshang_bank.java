@@ -64,9 +64,9 @@ public class Zhaoshang_bank implements Get_data {
                 calendar.setTime(earnDate);
                 calendar.add(calendar.DATE,0 - entity.getDays());
                 earnDate = calendar.getTime();
-                entity.setDateStart(String.valueOf(beginDate.getTime()));
-                entity.setDateEnd(String.valueOf(endDate.getTime()));
-                entity.setDateEarn(String.valueOf(earnDate.getTime()));
+                entity.setDateStart(beginDate.getTime());
+                entity.setDateEnd(endDate.getTime());
+                entity.setDateEarn(earnDate.getTime());
                 entity.setSurplusValue(null);
 
                 Session session = SessionInstance.getSession();

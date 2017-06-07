@@ -12,7 +12,7 @@ public class GroupsEntity {
     private Integer type;
     private Integer days;
     private Double yearRate;
-    private Integer minMoney;
+    private Double minMoney;
 
     public int getId() {
         return id;
@@ -62,11 +62,11 @@ public class GroupsEntity {
         this.yearRate = yearRate;
     }
 
-    public Integer getMinMoney() {
+    public Double getMinMoney() {
         return minMoney;
     }
 
-    public void setMinMoney(Integer minMoney) {
+    public void setMinMoney(Double minMoney) {
         this.minMoney = minMoney;
     }
 

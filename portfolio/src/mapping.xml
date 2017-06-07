@@ -35,22 +35,6 @@
         <property name="option8" column="option8"/>
         <property name="mlike" column="mlike"/>
     </class>
-    <class name="entity.ProductsEntity" table="products" schema="portfolio">
-        <id name="id" column="id">
-            <generator class="increment"/>
-        </id>
-        <property name="link" column="link"/>
-        <property name="minMoney" column="min_money"/>
-        <property name="title" column="title"/>
-        <property name="earn" column="earn"/>
-        <property name="dateStart" column="date_start"/>
-        <property name="dateEnd" column="date_end"/>
-        <property name="dateEarn" column="date_earn"/>
-        <property name="days" column="days"/>
-        <property name="risk" column="risk"/>
-        <property name="guarantee" column="isGuaranteed"/>
-        <property name="surplusValue" column="surplus_value"/>
-    </class>
     <class name="entity.GroupsEntity" table="groups" schema="portfolio">
         <id name="id" column="id">
             <generator class="increment"/>
@@ -75,5 +59,20 @@
         <property name="userName" column="user_name"/>
         <property name="groupId" column="group_id"/>
         <property name="content" column="content"/>
+    </class>
+    <class name="entity.ProductsEntity" table="products" schema="portfolio">
+        <id name="id" column="id"/>
+        <property name="link" column="link"/>
+        <property name="minMoney" column="min_money"/>
+        <property name="title" column="title"/>
+        <property name="earn" column="earn"/>
+        <property name="dateStart" column="date_start"/>
+        <property name="dateEnd" column="date_end"/>
+        <property name="dateEarn" column="date_earn"/>
+        <property name="days" column="days"/>
+        <property name="surplusValue" column="surplus_value"/>
+        <property name="risk" column="risk"/>
+        <property name="guaranteed" column="isGuaranteed"/>
+        <property name="save" column="save"/>
     </class>
 </hibernate-mapping>
