@@ -83,8 +83,8 @@ public class group extends HttpServlet {
         List res = new ArrayList();
         Long time = new Date().getTime();
         System.out.println(time);
-        String query_temp1 = "from ProductsEntity where risk = 1 and guaranteed = true and save = false" +
-                "and dateStart < ? and dateEnd > ? " +
+        String query_temp1 = "from ProductsEntity where risk = 1 and guaranteed = true and save = false and dateStart < ?" +
+                " and dateEnd > ? " +
                 "and minMoney < ? and days < ? order by earn desc ";
         Query query1_temp1 = session.createQuery(query_temp1);
         query1_temp1.setParameter(0, time);
@@ -122,8 +122,8 @@ public class group extends HttpServlet {
     private List getDate2(Session session, int day, int money){
         List res = new ArrayList();
         Long time = new Date().getTime();
-        String hql_selectGua = "from ProductsEntity where guaranteed = true and save = false" +
-                "and dateStart < ? and dateEnd > ? " +
+        String hql_selectGua = "from ProductsEntity where guaranteed = true and save = false and dateStart < ?" +
+                " and dateEnd > ? " +
                 "and minMoney < ? and days < ? order by earn desc ";
         Query selectGua = session.createQuery(hql_selectGua);
         selectGua.setParameter(0, time);
