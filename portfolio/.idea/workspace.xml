@@ -1,10 +1,41 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="11908dab-9e04-422a-94fa-de0f7552978d" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/artifacts/portfolio/portfolio.war" afterPath="$PROJECT_DIR$/out/artifacts/portfolio/portfolio.war" />
+    <list default="true" id="11908dab-9e04-422a-94fa-de0f7552978d" name="Default" comment="细节">
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/portfolio/deal/MD5Util.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/portfolio/entity/CommendGroupsEntity.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/portfolio/entity/GroupsEntity.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/portfolio/entity/ProductsEntity.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/portfolio/entity/RelationProductGroupEntity.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/portfolio/entity/UserInfoEntity.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/portfolio/entity/UserRiskAbilityEntity.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/portfolio/entity/UserRiskLikeEntity.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/portfolio/module_getData/Get_data.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/portfolio/module_getData/Jianshe_bank.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/portfolio/servlet/getNews.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/portfolio/servlet/signIn.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/portfolio/servlet/signOut.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/portfolio/servlet/signUp.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/portfolio/servlet/testCheck.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/portfolio/test/module_getData/Jianshe_bankTest.class" afterPath="" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/deal/MD5Util.java" afterPath="$PROJECT_DIR$/src/deal/MD5Util.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/entity/CommendGroupsEntity.java" afterPath="$PROJECT_DIR$/src/entity/CommendGroupsEntity.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/entity/GroupsEntity.java" afterPath="$PROJECT_DIR$/src/entity/GroupsEntity.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/entity/ProductsEntity.java" afterPath="$PROJECT_DIR$/src/entity/ProductsEntity.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/entity/RelationProductGroupEntity.java" afterPath="$PROJECT_DIR$/src/entity/RelationProductGroupEntity.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/entity/SessionInstance.java" afterPath="$PROJECT_DIR$/src/entity/SessionInstance.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/entity/UserInfoEntity.java" afterPath="$PROJECT_DIR$/src/entity/UserInfoEntity.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/entity/UserRiskAbilityEntity.java" afterPath="$PROJECT_DIR$/src/entity/UserRiskAbilityEntity.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/entity/UserRiskLikeEntity.java" afterPath="$PROJECT_DIR$/src/entity/UserRiskLikeEntity.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/module_getData/Jianshe_bank.java" afterPath="$PROJECT_DIR$/src/module_getData/Jianshe_bank.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/servlet/getGroups.java" afterPath="$PROJECT_DIR$/src/servlet/getGroups.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/servlet/getNews.java" afterPath="$PROJECT_DIR$/src/servlet/getNews.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/servlet/getStatus.java" afterPath="$PROJECT_DIR$/src/servlet/getStatus.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/servlet/group.java" afterPath="$PROJECT_DIR$/src/servlet/group.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/servlet/signIn.java" afterPath="$PROJECT_DIR$/src/servlet/signIn.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/servlet/signUp.java" afterPath="$PROJECT_DIR$/src/servlet/signUp.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/test/module_getData/Jianshe_bankTest.java" afterPath="$PROJECT_DIR$/src/test/module_getData/Jianshe_bankTest.java" />
     </list>
     <ignored path="portfolio.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -100,12 +131,9 @@
       <file leaf-file-name="group.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/servlet/group.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="145">
-              <caret line="234" column="0" lean-forward="false" selection-start-line="234" selection-start-column="0" selection-end-line="234" selection-end-column="0" />
+            <state relative-caret-position="529">
+              <caret line="152" column="22" lean-forward="false" selection-start-line="152" selection-start-column="22" selection-end-line="152" selection-end-column="22" />
               <folding>
-                <element signature="method#doPost#0;class#group#0" expanded="false" />
-                <element signature="method#getDate1#0;class#group#0" expanded="false" />
-                <element signature="method#getDate2#0;class#group#0" expanded="false" />
                 <element signature="method#getDate3#0;class#group#0" expanded="false" />
                 <element signature="method#getDate4#0;class#group#0" expanded="false" />
                 <element signature="method#getDate5#0;class#group#0" expanded="false" />
@@ -118,18 +146,18 @@
       <file leaf-file-name="signUp.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/servlet/signUp.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="851">
-              <caret line="60" column="23" lean-forward="true" selection-start-line="60" selection-start-column="23" selection-end-line="60" selection-end-column="23" />
+            <state relative-caret-position="207">
+              <caret line="34" column="20" lean-forward="false" selection-start-line="34" selection-start-column="20" selection-end-line="34" selection-end-column="20" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="sign.js" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/web/myJS/sign.js">
+      <file leaf-file-name="signOut.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/servlet/signOut.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1493">
-              <caret line="96" column="1" lean-forward="false" selection-start-line="96" selection-start-column="1" selection-end-line="96" selection-end-column="1" />
+            <state relative-caret-position="276">
+              <caret line="17" column="0" lean-forward="false" selection-start-line="17" selection-start-column="0" selection-end-line="17" selection-end-column="0" />
               <folding />
             </state>
           </provider>
@@ -138,91 +166,49 @@
       <file leaf-file-name="signIn.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/servlet/signIn.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="851">
-              <caret line="51" column="18" lean-forward="true" selection-start-line="51" selection-start-column="18" selection-end-line="51" selection-end-column="18" />
+            <state relative-caret-position="-138">
+              <caret line="49" column="22" lean-forward="false" selection-start-line="49" selection-start-column="22" selection-end-line="49" selection-end-column="22" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="portfolio.user_info" pinned="false" current-in-tab="true">
-        <entry file="dbDummy://dbtable:/17a74961/ce02384d-e900-482b-9b4c-e9f02d820597/portfolio.user_info">
-          <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
-            <state>
-              <filtering enabled="true" />
-            </state>
-          </provider>
-          <provider editor-type-id="text-editor">
-            <state relative-caret-position="0">
-              <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="portfolio.groups" pinned="false" current-in-tab="false">
-        <entry file="dbDummy://dbtable:/17a74961/ce02384d-e900-482b-9b4c-e9f02d820597/portfolio.groups">
-          <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
-            <state>
-              <filtering enabled="true" />
-            </state>
-          </provider>
-          <provider editor-type-id="text-editor">
-            <state relative-caret-position="0">
-              <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="portfolio.relation_product_group" pinned="false" current-in-tab="false">
-        <entry file="dbDummy://dbtable:/17a74961/ce02384d-e900-482b-9b4c-e9f02d820597/portfolio.relation_product_group">
-          <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
-            <state>
-              <filtering enabled="true" />
-            </state>
-          </provider>
-          <provider editor-type-id="text-editor">
-            <state relative-caret-position="0">
-              <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="getGroups.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/servlet/getGroups.java">
+      <file leaf-file-name="testCheck.java" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/servlet/testCheck.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="460">
-              <caret line="32" column="48" lean-forward="false" selection-start-line="32" selection-start-column="48" selection-end-line="32" selection-end-column="48" />
-              <folding>
-                <element signature="imports" expanded="false" />
-              </folding>
+            <state relative-caret-position="2047">
+              <caret line="101" column="40" lean-forward="false" selection-start-line="101" selection-start-column="40" selection-end-line="101" selection-end-column="40" />
+              <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Jianshe_bankTest.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/test/module_getData/Jianshe_bankTest.java">
+      <file leaf-file-name="web.xml" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/web/WEB-INF/web.xml">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1127">
-              <caret line="64" column="30" lean-forward="false" selection-start-line="64" selection-start-column="30" selection-end-line="64" selection-end-column="30" />
-              <folding>
-                <element signature="imports" expanded="false" />
-                <element signature="method#setParameter#0;class#Jianshe_bankTest#0" expanded="false" />
-              </folding>
+            <state relative-caret-position="184">
+              <caret line="8" column="14" lean-forward="false" selection-start-line="8" selection-start-column="14" selection-end-line="8" selection-end-column="14" />
+              <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Zhaoshang_bank.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/module_getData/Zhaoshang_bank.java">
+      <file leaf-file-name="getStatus.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/servlet/getStatus.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1518">
-              <caret line="79" column="33" lean-forward="false" selection-start-line="79" selection-start-column="33" selection-end-line="79" selection-end-column="33" />
-              <folding>
-                <element signature="imports" expanded="false" />
-              </folding>
+            <state relative-caret-position="-69">
+              <caret line="23" column="31" lean-forward="false" selection-start-line="23" selection-start-column="31" selection-end-line="23" selection-end-column="31" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="getTestStatus.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/servlet/getTestStatus.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="410">
+              <caret line="46" column="9" lean-forward="false" selection-start-line="46" selection-start-column="9" selection-end-line="46" selection-end-column="9" />
+              <folding />
             </state>
           </provider>
         </entry>
@@ -267,9 +253,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/src/servlet/MD5Util.java" />
-        <option value="$PROJECT_DIR$/src/deal/MD5Util.java" />
-        <option value="$PROJECT_DIR$/src/servlet/getNews.java" />
         <option value="$PROJECT_DIR$/src/servlet/signOut.java" />
         <option value="$PROJECT_DIR$/web/js/modalEffects.js" />
         <option value="$PROJECT_DIR$/web/js/classie.js" />
@@ -279,15 +262,8 @@
         <option value="$PROJECT_DIR$/src/module_getData/Get_data.java" />
         <option value="$PROJECT_DIR$/web/myJS/news.js" />
         <option value="$PROJECT_DIR$/src/entity/ProductsEntity.hbm.xml" />
-        <option value="$PROJECT_DIR$/src/entity/CommendGroupsEntity.java" />
         <option value="$APPLICATION_CONFIG_DIR$/consoles/db/ce02384d-e900-482b-9b4c-e9f02d820597/console.sql" />
-        <option value="$PROJECT_DIR$/src/entity/SessionInstance.java" />
-        <option value="$PROJECT_DIR$/src/entity/UserRiskAbilityEntity.java" />
-        <option value="$PROJECT_DIR$/src/entity/UserRiskLikeEntity.java" />
-        <option value="$PROJECT_DIR$/src/entity/RelationProductGroupEntity.java" />
         <option value="$PROJECT_DIR$/web/sign_in.html" />
-        <option value="$PROJECT_DIR$/src/servlet/signIn.java" />
-        <option value="$PROJECT_DIR$/src/servlet/signUp.java" />
         <option value="$PROJECT_DIR$/web/myJS/index.js" />
         <option value="$PROJECT_DIR$/web/project_untest.html" />
         <option value="$PROJECT_DIR$/web/index.html" />
@@ -300,7 +276,6 @@
         <option value="$PROJECT_DIR$/web/js/recommend/sidebar.js" />
         <option value="$PROJECT_DIR$/src/module_getData/Guangda_bank.java" />
         <option value="$PROJECT_DIR$/web/myJS/sign.js" />
-        <option value="$PROJECT_DIR$/src/servlet/getStatus.java" />
         <option value="$PROJECT_DIR$/web/myJS/ready.js" />
         <option value="$PROJECT_DIR$/web/myJS/test.js" />
         <option value="$PROJECT_DIR$/web/WEB-INF/web.xml" />
@@ -308,16 +283,27 @@
         <option value="$PROJECT_DIR$/web/js/recommend/select.jquery.js" />
         <option value="$PROJECT_DIR$/web/linkpage2.html" />
         <option value="$PROJECT_DIR$/src/module_getData/Zhaoshang_bank.java" />
-        <option value="$PROJECT_DIR$/src/module_getData/Jianshe_bank.java" />
         <option value="$PROJECT_DIR$/src/hibernate.cfg.xml" />
         <option value="dbtable:/17a74961/ce02384d-e900-482b-9b4c-e9f02d820597/portfolio.products" />
-        <option value="$PROJECT_DIR$/src/entity/ProductsEntity.java" />
         <option value="$PROJECT_DIR$/src/mapping.xml" />
-        <option value="$PROJECT_DIR$/src/entity/GroupsEntity.java" />
         <option value="$PROJECT_DIR$/web/myJS/project.js" />
-        <option value="$PROJECT_DIR$/src/servlet/getGroups.java" />
+        <option value="$PROJECT_DIR$/src/deal/MD5Util.java" />
+        <option value="$PROJECT_DIR$/src/entity/CommendGroupsEntity.java" />
+        <option value="$PROJECT_DIR$/src/entity/GroupsEntity.java" />
+        <option value="$PROJECT_DIR$/src/entity/ProductsEntity.java" />
+        <option value="$PROJECT_DIR$/src/entity/RelationProductGroupEntity.java" />
+        <option value="$PROJECT_DIR$/src/entity/SessionInstance.java" />
+        <option value="$PROJECT_DIR$/src/entity/UserInfoEntity.java" />
+        <option value="$PROJECT_DIR$/src/entity/UserRiskAbilityEntity.java" />
+        <option value="$PROJECT_DIR$/src/entity/UserRiskLikeEntity.java" />
+        <option value="$PROJECT_DIR$/src/module_getData/Jianshe_bank.java" />
         <option value="$PROJECT_DIR$/src/test/module_getData/Jianshe_bankTest.java" />
+        <option value="$PROJECT_DIR$/src/servlet/getGroups.java" />
+        <option value="$PROJECT_DIR$/src/servlet/getNews.java" />
+        <option value="$PROJECT_DIR$/src/servlet/getStatus.java" />
         <option value="$PROJECT_DIR$/src/servlet/group.java" />
+        <option value="$PROJECT_DIR$/src/servlet/signUp.java" />
+        <option value="$PROJECT_DIR$/src/servlet/signIn.java" />
       </list>
     </option>
   </component>
@@ -337,7 +323,7 @@
   <component name="ProjectFrameBounds">
     <option name="x" value="-8" />
     <option name="width" value="1378" />
-    <option name="height" value="744" />
+    <option name="height" value="735" />
   </component>
   <component name="ProjectInspectionProfilesVisibleTreeState">
     <entry key="Project Default">
@@ -377,9 +363,7 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scope" />
       <pane id="PackagesPane" />
-      <pane id="Scratches" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -420,7 +404,7 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="myJS" />
+              <option name="myItemId" value="WEB-INF" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -435,24 +419,6 @@
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="portfolio" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="portfolio" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="servlet" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -471,6 +437,24 @@
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="module_getData" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="portfolio" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="portfolio" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="servlet" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -548,6 +532,8 @@
           </PATH>
         </subPane>
       </pane>
+      <pane id="Scratches" />
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -1161,7 +1147,9 @@
       <workItem from="1496727966740" duration="27329000" />
       <workItem from="1496793134760" duration="6817000" />
       <workItem from="1496802818850" duration="267000" />
-      <workItem from="1496814814285" duration="3524000" />
+      <workItem from="1496814814285" duration="3687000" />
+      <workItem from="1496838758136" duration="702000" />
+      <workItem from="1497059003217" duration="1255000" />
     </task>
     <task id="LOCAL-00001" summary="登录注册退出，利用session">
       <created>1494127139673</created>
@@ -1233,7 +1221,14 @@
       <option name="project" value="LOCAL" />
       <updated>1496802993432</updated>
     </task>
-    <option name="localTasksCounter" value="11" />
+    <task id="LOCAL-00011" summary="细节">
+      <created>1496820719777</created>
+      <option name="number" value="00011" />
+      <option name="presentableId" value="LOCAL-00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1496820719777</updated>
+    </task>
+    <option name="localTasksCounter" value="12" />
     <servers />
   </component>
   <component name="TestHistory">
@@ -1269,7 +1264,7 @@
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="200326000" />
+    <option name="totallyTimeSpent" value="202446000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -1281,7 +1276,7 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="0" width="1378" height="744" extended-state="0" />
+    <frame x="-8" y="0" width="1378" height="735" extended-state="0" />
     <layout>
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Nl-Palette" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
@@ -1296,16 +1291,15 @@
       <window_info id="UI Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3295082" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
-      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3262295" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Palette&#9;" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Image Layers" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Java Enterprise" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3295082" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Analysis" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.447541" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.35409835" sideWeight="0.49394855" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.35409835" sideWeight="0.49394855" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3295082" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Persistence" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.25569043" sideWeight="0.46192893" order="2" side_tool="true" content_ui="tabs" />
-      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.25569043" sideWeight="0.53807104" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Persistence" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.26327768" sideWeight="0.47088185" order="2" side_tool="true" content_ui="tabs" />
+      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.26327768" sideWeight="0.5291181" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Web" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.16717096" sideWeight="0.42857143" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Theme Preview" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.24432677" sideWeight="0.42857143" order="2" side_tool="true" content_ui="tabs" />
@@ -1314,6 +1308,7 @@
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="CDI" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3262295" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Database Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3229508" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32786885" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
@@ -1400,13 +1395,13 @@
       <breakpoints>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/module_getData/Jianshe_bank.java</url>
-          <line>32</line>
+          <line>33</line>
           <properties />
           <option name="timeStamp" value="1" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/test/module_getData/Jianshe_bankTest.java</url>
-          <line>53</line>
+          <line>54</line>
           <properties />
           <option name="timeStamp" value="4" />
         </line-breakpoint>
@@ -1420,49 +1415,6 @@
     <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/entity/RelationProductGroupEntityPK.java" />
-    <entry file="file://$APPLICATION_CONFIG_DIR$/consoles/db/ce02384d-e900-482b-9b4c-e9f02d820597/console.sql">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="141">
-          <caret line="75" column="18" lean-forward="false" selection-start-line="75" selection-start-column="18" selection-end-line="75" selection-end-column="18" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/entity/CommendGroupsEntity.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="138">
-          <caret line="7" column="27" lean-forward="false" selection-start-line="7" selection-start-column="27" selection-end-line="7" selection-end-column="27" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/entity/UserRiskLikeEntity.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="317">
-          <caret line="98" column="29" lean-forward="false" selection-start-line="98" selection-start-column="29" selection-end-line="98" selection-end-column="29" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/entity/UserRiskAbilityEntity.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="943">
-          <caret line="59" column="0" lean-forward="false" selection-start-line="59" selection-start-column="0" selection-end-line="59" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/entity/RelationProductGroupEntity.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="23">
-          <caret line="7" column="63" lean-forward="false" selection-start-line="7" selection-start-column="63" selection-end-line="7" selection-end-column="63" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://C:/Program Files/Java/jdk1.8.0_72/jre/lib/rt.jar!/sun/net/www/protocol/https/HttpsURLConnectionImpl.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="92">
-          <caret line="57" column="0" lean-forward="false" selection-start-line="57" selection-start-column="0" selection-end-line="57" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/web/favicon.ico">
       <provider selected="true" editor-type-id="images">
         <state />
@@ -1472,13 +1424,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="201">
           <caret line="36" column="104" lean-forward="false" selection-start-line="36" selection-start-column="104" selection-end-line="36" selection-end-column="104" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/entity/SessionInstance.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="246">
-          <caret line="16" column="46" lean-forward="false" selection-start-line="16" selection-start-column="46" selection-end-line="17" selection-end-column="44" />
         </state>
       </provider>
     </entry>
@@ -1506,13 +1451,6 @@
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/web/project_untest.html" />
-    <entry file="file://$PROJECT_DIR$/src/servlet/testCheck.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="989">
-          <caret line="101" column="40" lean-forward="false" selection-start-line="101" selection-start-column="40" selection-end-line="101" selection-end-column="40" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/web/test_check.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="2254">
@@ -1553,13 +1491,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/servlet/getNews.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="734">
-          <caret line="45" column="57" lean-forward="false" selection-start-line="45" selection-start-column="57" selection-end-line="45" selection-end-column="57" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/web/linkpage1.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
@@ -1574,24 +1505,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/servlet/getStatus.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-163">
-          <caret line="21" column="8" lean-forward="false" selection-start-line="18" selection-start-column="8" selection-end-line="21" selection-end-column="8" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/web/myJS/test.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="92">
           <caret line="4" column="29" lean-forward="false" selection-start-line="4" selection-start-column="29" selection-end-line="4" selection-end-column="29" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/web/WEB-INF/web.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="219">
-          <caret line="84" column="22" lean-forward="true" selection-start-line="84" selection-start-column="22" selection-end-line="84" selection-end-column="22" />
         </state>
       </provider>
     </entry>
@@ -1616,13 +1533,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/servlet/getTestStatus.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="226">
-          <caret line="38" column="91" lean-forward="false" selection-start-line="34" selection-start-column="12" selection-end-line="38" selection-end-column="91" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/web/js/recommend/select.jquery.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="322">
@@ -1630,26 +1540,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/servlet/signOut.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="207">
-          <caret line="17" column="0" lean-forward="false" selection-start-line="17" selection-start-column="0" selection-end-line="17" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/hibernate.cfg.xml">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="136">
           <caret line="10" column="51" lean-forward="false" selection-start-line="10" selection-start-column="51" selection-end-line="10" selection-end-column="51" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/module_getData/Jianshe_bank.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="186">
-          <caret line="50" column="30" lean-forward="true" selection-start-line="50" selection-start-column="30" selection-end-line="50" selection-end-column="30" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1657,31 +1551,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="146">
           <caret line="73" column="45" lean-forward="false" selection-start-line="73" selection-start-column="45" selection-end-line="73" selection-end-column="45" />
-          <folding>
-            <element signature="n#class#0;n#hibernate-mapping#0;n#!!top" expanded="false" />
-            <element signature="n#class#1;n#hibernate-mapping#0;n#!!top" expanded="false" />
-            <element signature="n#class#2;n#hibernate-mapping#0;n#!!top" expanded="false" />
-            <element signature="n#class#4;n#hibernate-mapping#0;n#!!top" expanded="false" />
-            <element signature="n#class#5;n#hibernate-mapping#0;n#!!top" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/entity/ProductsEntity.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="42">
-          <caret line="8" column="23" lean-forward="false" selection-start-line="8" selection-start-column="23" selection-end-line="8" selection-end-column="23" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/entity/GroupsEntity.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="180">
-          <caret line="66" column="5" lean-forward="true" selection-start-line="66" selection-start-column="5" selection-end-line="66" selection-end-column="5" />
-          <folding>
-            <element signature="e#994#995#0" expanded="false" />
-            <element signature="e#1025#1026#0" expanded="false" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1700,95 +1569,233 @@
       </provider>
     </entry>
     <entry file="dbDummy://dbtable:/17a74961/ce02384d-e900-482b-9b4c-e9f02d820597/portfolio.user_risk_ability">
+      <provider editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
       <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
         <state>
           <filtering enabled="true" />
         </state>
       </provider>
+    </entry>
+    <entry file="dbDummy://dbtable:/17a74961/ce02384d-e900-482b-9b4c-e9f02d820597/portfolio.products">
       <provider editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
+        <state>
+          <filtering enabled="true" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="dbDummy://dbtable:/17a74961/ce02384d-e900-482b-9b4c-e9f02d820597/portfolio.relation_product_group">
+      <provider editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
+        <state>
+          <filtering enabled="true" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="dbDummy://dbtable:/17a74961/ce02384d-e900-482b-9b4c-e9f02d820597/portfolio.groups">
+      <provider editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
+        <state>
+          <filtering enabled="true" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/myJS/sign.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="2208">
+          <caret line="96" column="1" lean-forward="false" selection-start-line="96" selection-start-column="1" selection-end-line="96" selection-end-column="1" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="dbDummy://dbtable:/17a74961/ce02384d-e900-482b-9b4c-e9f02d820597/portfolio.user_info">
+      <provider editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
+        <state>
+          <filtering enabled="true" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/entity/UserRiskLikeEntity.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="69">
+          <caret line="3" column="27" lean-forward="false" selection-start-line="3" selection-start-column="27" selection-end-line="3" selection-end-column="27" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/entity/UserRiskAbilityEntity.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="69">
+          <caret line="3" column="21" lean-forward="false" selection-start-line="3" selection-start-column="21" selection-end-line="3" selection-end-column="21" />
+          <folding>
+            <element signature="e#1229#1230#0" expanded="true" />
+            <element signature="e#1259#1260#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/entity/UserInfoEntity.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="69">
+          <caret line="3" column="22" lean-forward="false" selection-start-line="3" selection-start-column="22" selection-end-line="3" selection-end-column="22" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/entity/SessionInstance.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="315">
+          <caret line="28" column="5" lean-forward="true" selection-start-line="28" selection-start-column="5" selection-end-line="28" selection-end-column="5" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/entity/RelationProductGroupEntity.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="115">
+          <caret line="5" column="35" lean-forward="false" selection-start-line="5" selection-start-column="35" selection-end-line="5" selection-end-column="35" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/entity/ProductsEntity.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="69">
+          <caret line="3" column="19" lean-forward="false" selection-start-line="3" selection-start-column="19" selection-end-line="3" selection-end-column="19" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/entity/GroupsEntity.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="69">
+          <caret line="3" column="17" lean-forward="false" selection-start-line="3" selection-start-column="17" selection-end-line="3" selection-end-column="17" />
+          <folding>
+            <element signature="e#1114#1115#0" expanded="true" />
+            <element signature="e#1145#1146#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/entity/CommendGroupsEntity.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="138">
+          <caret line="6" column="29" lean-forward="false" selection-start-line="6" selection-start-column="29" selection-end-line="6" selection-end-column="29" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/deal/MD5Util.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="115">
+          <caret line="5" column="8" lean-forward="false" selection-start-line="5" selection-start-column="8" selection-end-line="5" selection-end-column="8" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/module_getData/Get_data.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="46">
+          <caret line="2" column="3" lean-forward="true" selection-start-line="2" selection-start-column="3" selection-end-line="2" selection-end-column="3" />
+          <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/module_getData/Zhaoshang_bank.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1518">
+        <state relative-caret-position="676">
           <caret line="79" column="33" lean-forward="false" selection-start-line="79" selection-start-column="33" selection-end-line="79" selection-end-column="33" />
-          <folding>
-            <element signature="imports" expanded="false" />
-          </folding>
+          <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/servlet/getGroups.java">
+    <entry file="file://$PROJECT_DIR$/src/module_getData/Jianshe_bank.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="460">
-          <caret line="32" column="48" lean-forward="false" selection-start-line="32" selection-start-column="48" selection-end-line="32" selection-end-column="48" />
-          <folding>
-            <element signature="imports" expanded="false" />
-          </folding>
+        <state relative-caret-position="262">
+          <caret line="50" column="45" lean-forward="true" selection-start-line="50" selection-start-column="45" selection-end-line="50" selection-end-column="45" />
+          <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/test/module_getData/Jianshe_bankTest.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1127">
-          <caret line="64" column="30" lean-forward="false" selection-start-line="64" selection-start-column="30" selection-end-line="64" selection-end-column="30" />
+        <state relative-caret-position="170">
+          <caret line="45" column="16" lean-forward="false" selection-start-line="45" selection-start-column="16" selection-end-line="45" selection-end-column="16" />
           <folding>
-            <element signature="imports" expanded="false" />
             <element signature="method#setParameter#0;class#Jianshe_bankTest#0" expanded="false" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="dbDummy://dbtable:/17a74961/ce02384d-e900-482b-9b4c-e9f02d820597/portfolio.products">
-      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
-        <state>
-          <filtering enabled="true" />
-        </state>
-      </provider>
-      <provider editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+    <entry file="file://$PROJECT_DIR$/src/servlet/getNews.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="391">
+          <caret line="56" column="9" lean-forward="true" selection-start-line="56" selection-start-column="9" selection-end-line="56" selection-end-column="9" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="dbDummy://dbtable:/17a74961/ce02384d-e900-482b-9b4c-e9f02d820597/portfolio.relation_product_group">
-      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
-        <state>
-          <filtering enabled="true" />
-        </state>
-      </provider>
-      <provider editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+    <entry file="file://$PROJECT_DIR$/src/servlet/getGroups.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="92">
+          <caret line="22" column="23" lean-forward="false" selection-start-line="22" selection-start-column="23" selection-end-line="22" selection-end-column="23" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="dbDummy://dbtable:/17a74961/ce02384d-e900-482b-9b4c-e9f02d820597/portfolio.groups">
-      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
-        <state>
-          <filtering enabled="true" />
+    <entry file="file://$PROJECT_DIR$/web/WEB-INF/web.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="184">
+          <caret line="8" column="14" lean-forward="false" selection-start-line="8" selection-start-column="14" selection-end-line="8" selection-end-column="14" />
+          <folding />
         </state>
       </provider>
-      <provider editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/servlet/getStatus.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-69">
+          <caret line="23" column="31" lean-forward="false" selection-start-line="23" selection-start-column="31" selection-end-line="23" selection-end-column="31" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/servlet/getTestStatus.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="410">
+          <caret line="46" column="9" lean-forward="false" selection-start-line="46" selection-start-column="9" selection-end-line="46" selection-end-column="9" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/servlet/group.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="145">
-          <caret line="234" column="0" lean-forward="false" selection-start-line="234" selection-start-column="0" selection-end-line="234" selection-end-column="0" />
+        <state relative-caret-position="529">
+          <caret line="152" column="22" lean-forward="false" selection-start-line="152" selection-start-column="22" selection-end-line="152" selection-end-column="22" />
           <folding>
-            <element signature="method#doPost#0;class#group#0" expanded="false" />
-            <element signature="method#getDate1#0;class#group#0" expanded="false" />
-            <element signature="method#getDate2#0;class#group#0" expanded="false" />
             <element signature="method#getDate3#0;class#group#0" expanded="false" />
             <element signature="method#getDate4#0;class#group#0" expanded="false" />
             <element signature="method#getDate5#0;class#group#0" expanded="false" />
@@ -1797,39 +1804,34 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/servlet/signIn.java">
+    <entry file="file://$PROJECT_DIR$/src/servlet/signOut.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="851">
-          <caret line="51" column="18" lean-forward="true" selection-start-line="51" selection-start-column="18" selection-end-line="51" selection-end-column="18" />
+        <state relative-caret-position="276">
+          <caret line="17" column="0" lean-forward="false" selection-start-line="17" selection-start-column="0" selection-end-line="17" selection-end-column="0" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/servlet/signUp.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="851">
-          <caret line="60" column="23" lean-forward="true" selection-start-line="60" selection-start-column="23" selection-end-line="60" selection-end-column="23" />
+        <state relative-caret-position="207">
+          <caret line="34" column="20" lean-forward="false" selection-start-line="34" selection-start-column="20" selection-end-line="34" selection-end-column="20" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/web/myJS/sign.js">
+    <entry file="file://$PROJECT_DIR$/src/servlet/signIn.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1493">
-          <caret line="96" column="1" lean-forward="false" selection-start-line="96" selection-start-column="1" selection-end-line="96" selection-end-column="1" />
+        <state relative-caret-position="-138">
+          <caret line="49" column="22" lean-forward="false" selection-start-line="49" selection-start-column="22" selection-end-line="49" selection-end-column="22" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="dbDummy://dbtable:/17a74961/ce02384d-e900-482b-9b4c-e9f02d820597/portfolio.user_info">
-      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
-        <state>
-          <filtering enabled="true" />
-        </state>
-      </provider>
-      <provider editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+    <entry file="file://$PROJECT_DIR$/src/servlet/testCheck.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="2047">
+          <caret line="101" column="40" lean-forward="false" selection-start-line="101" selection-start-column="40" selection-end-line="101" selection-end-column="40" />
           <folding />
         </state>
       </provider>

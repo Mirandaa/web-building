@@ -43,6 +43,7 @@ public void after() throws Exception {
 @Test
 public void testGetInfo() throws Exception { 
 //TODO: Test goes here...
+    //测试得到数据筛选过程
     Session session = SessionInstance.getSession();
     int money = 4;
     int day = 4;

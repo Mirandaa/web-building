@@ -20,6 +20,7 @@ import java.util.List;
 @WebServlet(name = "getGroups")
 public class getGroups extends HttpServlet {
     protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
+        //设置返回类型，以及编码格式
         response.setContentType("text/javaScript; charset=UTF-8");
         response.setHeader("Access-Control-Allow-Origin","*");
         boolean isOk = false;

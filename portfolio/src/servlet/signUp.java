@@ -32,6 +32,7 @@ public class signUp extends HttpServlet {
         entity.setName(name);
         entity.setEmail(email);
         try {
+            //密码进行加密
             entity.setPsw(MD5Util.md5Encode(psw));
         } catch (Exception e) {
             e.printStackTrace();
@@ -42,6 +43,7 @@ public class signUp extends HttpServlet {
         query.setParameter(0,name);
         List<UserInfoEntity> list = (List<UserInfoEntity>)query.list();
         String data = "";
+        //判断用户名是否存在
         if (list.size() == 0) {
             Transaction transaction = session.beginTransaction();
             session.save(entity);

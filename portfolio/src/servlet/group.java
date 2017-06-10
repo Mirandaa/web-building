@@ -28,8 +28,10 @@ public class group extends HttpServlet {
         boolean isOk = false;
         List res = new ArrayList();
         try {
+            //得到参数
             int day = Integer.parseInt(request.getParameter("day"));
             int money = Integer.parseInt(request.getParameter("money"));
+            //得到当前用户信息，及测试信息
             UserInfoEntity entity = (UserInfoEntity) request.getSession().getAttribute("user");
             Session session = SessionInstance.getSession();
             String query = "from UserRiskAbilityEntity where name = ?";
@@ -38,6 +40,7 @@ public class group extends HttpServlet {
             List<UserRiskAbilityEntity> list = (List<UserRiskAbilityEntity>) query1.list();
             UserRiskAbilityEntity abilityEntity = list.get(0);
 
+            //根据测试等级，以及参数信息，对用户进行组合
             switch (abilityEntity.getAbility()){
                 case 1:
                     res = getDate1(session,day,money);
@@ -83,6 +86,7 @@ public class group extends HttpServlet {
         List res = new ArrayList();
         Long time = new Date().getTime();
         System.out.println(time);
+        //得到无风险的理财产品
         String query_temp1 = "from ProductsEntity where risk = 1 and guaranteed = true and save = false and dateStart < ?" +
                 " and dateEnd > ? " +
                 "and minMoney < ? and days < ? order by earn desc ";
@@ -100,11 +104,14 @@ public class group extends HttpServlet {
             entity1.setAgree(0);
             entity1.setMinMoney(product.getMinMoney());
             entity1.setType(1);
+            //计算年利率
             entity1.setYearRate(product.getEarn() * 0.8 + 1.75 * 0.2);
             Transaction transaction = session.beginTransaction();
+            //存放组合信息
             session.save(entity1);
             entity1.setName(entity1.getName() + entity1.getId());
             session.update(entity1);
+            //在关系表中，存放组合和产品之间的关系
             RelationProductGroupEntity relationEntity1 = new RelationProductGroupEntity();
             relationEntity1.setGroupId(entity1.getId());
             relationEntity1.setProductId(product.getId());
@@ -122,6 +129,7 @@ public class group extends HttpServlet {
     private List getDate2(Session session, int day, int money){
         List res = new ArrayList();
         Long time = new Date().getTime();
+        //选择保本的理财产品
         String hql_selectGua = "from ProductsEntity where guaranteed = true and save = false and dateStart < ?" +
                 " and dateEnd > ? " +
                 "and minMoney < ? and days < ? order by earn desc ";
@@ -131,6 +139,7 @@ public class group extends HttpServlet {
         setParameter(money,day,selectGua);
         List<ProductsEntity> guaEntity = (List<ProductsEntity>) selectGua.list();
         guaEntity = guaEntity.subList(0, guaEntity.size() > 3 ? 3 : guaEntity.size());
+        //选择低风险的产品
         String hql_selectUngua = "from ProductsEntity where guaranteed = false and risk = 2 and save = false " +
                 "and dateStart < ? and dateEnd > ? " +
                 "and minMoney < ? and days < ? order by earn desc ";
@@ -141,6 +150,7 @@ public class group extends HttpServlet {
         setParameter(money,day,selectGua);
         List<ProductsEntity> unGuaEntity = (List<ProductsEntity>) selectUngua.list();
         unGuaEntity = unGuaEntity.subList(0, unGuaEntity.size() > 3 ? 3 : unGuaEntity.size());
+        //进行组合并且保存相关信息
         for (int i = 0; i < guaEntity.size(); i++) {
             for (int j = 0; j < unGuaEntity.size(); j++){
                 ProductsEntity gua = guaEntity.get(i);

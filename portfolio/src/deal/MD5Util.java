@@ -2,6 +2,9 @@ package deal;
 
 import java.security.MessageDigest;
 
+/**
+ * 密码md5加密
+ */
 public class MD5Util {
     public static String md5Encode(String inStr) throws Exception {
         MessageDigest md5 = null;

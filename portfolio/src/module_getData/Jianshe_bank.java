@@ -10,6 +10,7 @@ import org.jsoup.Connection;
 import org.jsoup.Jsoup;
 
 /**
+ * 得到建设银行的理财数据
  * Created by p on 2017/5/23.
  */
 public class Jianshe_bank implements Get_data{
@@ -37,6 +38,7 @@ public class Jianshe_bank implements Get_data{
                 else {
                     entity.setMinMoney(Double.parseDouble(x));
                 }
+                //为实体类设值
                 String s = oldJson.getString("name");
                 entity.setTitle(s);
                 entity.setEarn(oldJson.getDouble("yieldRate"));
@@ -47,6 +49,7 @@ public class Jianshe_bank implements Get_data{
                 entity.setRisk(oldJson.getInt("riskLevel"));
                 entity.setGuaranteed(oldJson.getInt("yieldSpec") > 0);
                 entity.setSurplusValue(null);
+                //通过Session对实体类进行保存
                 Session session = SessionInstance.getSession();
                 Transaction transaction = session.beginTransaction();
                 session.saveOrUpdate(entity);

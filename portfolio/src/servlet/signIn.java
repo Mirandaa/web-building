@@ -42,10 +42,12 @@ public class signIn extends HttpServlet {
         query.setParameter(0,user);
         List<UserInfoEntity> list = (List<UserInfoEntity>)query.list();
         SessionInstance.closeSession();
+        //判断用户名是否存在
         if (list.size() == 0){
             data = "该用户名不存在，请核实";
         }
         else {
+            //判断密码是否正确
             if (!psw.equals(list.get(0).getPsw())){
                 data = "密码错误，请重新登录";
             }

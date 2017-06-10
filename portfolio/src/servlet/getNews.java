@@ -34,6 +34,7 @@ public class getNews extends HttpServlet {
         Connection.Response response = null;
         JSONArray resJson = new JSONArray();
         try {
+            //得到网络新闻json数据
             response = Jsoup.connect("https://xueqiu.com/#/").execute();
             response = Jsoup.connect("https://xueqiu.com/v4/statuses/public_timeline_by_category.json?since_id=-1&max_id=-1&count=5&category=-1")
                     .ignoreContentType(true)
@@ -42,6 +43,7 @@ public class getNews extends HttpServlet {
             String json_res = response.body();
             JSONObject json = JSONObject.fromObject(json_res);
             JSONArray array = (JSONArray) json.get("list");
+            //对网络得到的数据进行格式化
             for (Object object :array) {
                 JSONObject oldJson = (JSONObject) object;
                 JSONObject newJson = new JSONObject();

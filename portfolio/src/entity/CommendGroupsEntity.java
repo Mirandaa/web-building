@@ -1,6 +1,7 @@
 package entity;
 
 /**
+ * 实体类，对应表中commend_groups
  * Created by p on 2017/5/31.
  */
 public class CommendGroupsEntity {

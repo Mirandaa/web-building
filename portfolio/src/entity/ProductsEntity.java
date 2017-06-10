@@ -1,6 +1,7 @@
 package entity;
 
 /**
+ * 实体类，对应表中products
  * Created by p on 2017/6/6.
  */
 public class ProductsEntity {

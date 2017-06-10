@@ -1,6 +1,7 @@
 package entity;
 
 /**
+ * 实体类，对应数据库中user_risk_like
  * Created by p on 2017/5/31.
  */
 public class UserRiskLikeEntity {

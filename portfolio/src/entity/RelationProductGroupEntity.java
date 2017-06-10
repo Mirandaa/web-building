@@ -3,6 +3,7 @@ package entity;
 import java.io.Serializable;
 
 /**
+ * 实体类，对应数据库中relation_product_group
  * Created by p on 2017/5/31.
  */
 public class RelationProductGroupEntity implements Serializable{

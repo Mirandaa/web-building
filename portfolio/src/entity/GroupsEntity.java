@@ -1,8 +1,7 @@
 package entity;
 
-import javax.persistence.criteria.CriteriaBuilder;
-
 /**
+ * 实体类，对应表中groups
  * Created by p on 2017/5/31.
  */
 public class GroupsEntity {

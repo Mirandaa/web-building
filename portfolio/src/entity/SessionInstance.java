@@ -5,6 +5,7 @@ import org.hibernate.SessionFactory;
 import org.hibernate.cfg.Configuration;
 
 /**
+ * Session单例类
  * Created by p on 2017/5/4.
  */
 public class SessionInstance {
@@ -12,6 +13,10 @@ public class SessionInstance {
     private static SessionFactory factory = buildFactory();
     private static Session session;
 
+    /**
+     * 得到Session
+     * @return Session
+     */
     public static Session getSession() {
         if (session == null||!session.isOpen()){
             System.out.println("new session");
@@ -22,6 +27,10 @@ public class SessionInstance {
             return session;
         }
     }
+
+    /**
+     * 关闭Session
+     */
     public static void closeSession(){
         if (session!=null && session.isOpen()) {
             session.close();

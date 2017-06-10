@@ -21,6 +21,7 @@ public class getStatus extends HttpServlet {
         boolean isOk = false;
         UserInfoEntity entity = null;
         try {
+            //判断session中是否存有用户值
             entity = (UserInfoEntity) request.getSession().getAttribute("user");
             isOk = entity != null;
         }
