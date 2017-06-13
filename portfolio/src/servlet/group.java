@@ -83,20 +83,23 @@ public class group extends HttpServlet {
     }
 
     private List getDate1(Session session,int day,int money){
+        System.out.println("1111");
+        System.out.println(day);
+        System.out.println(money);
         List res = new ArrayList();
         Long time = new Date().getTime();
         System.out.println(time);
         //得到无风险的理财产品
-        String query_temp1 = "from ProductsEntity where risk = 1 and guaranteed = true and save = false and dateStart < ?" +
-                " and dateEnd > ? " +
+        String query_temp1 = "from ProductsEntity where risk = 1 and guaranteed = true and save = false " +
                 "and minMoney < ? and days < ? order by earn desc ";
         Query query1_temp1 = session.createQuery(query_temp1);
-        query1_temp1.setParameter(0, time);
-        query1_temp1.setParameter(1, time);
+//        query1_temp1.setParameter(0, time);
+//        query1_temp1.setParameter(1, time);
         setParameter(money,day,query1_temp1);
         List<ProductsEntity> productsEntities = (List<ProductsEntity>) query1_temp1.list();
         productsEntities = productsEntities.subList(0, productsEntities.size() > 5 ? 5 : productsEntities.size());
         for (int i = 0; i < productsEntities.size(); i++) {
+
             ProductsEntity product = productsEntities.get(i);
             GroupsEntity entity1 = new GroupsEntity();
             entity1.setName("安心计划");
@@ -130,24 +133,21 @@ public class group extends HttpServlet {
         List res = new ArrayList();
         Long time = new Date().getTime();
         //选择保本的理财产品
-        String hql_selectGua = "from ProductsEntity where guaranteed = true and save = false and dateStart < ?" +
-                " and dateEnd > ? " +
+        String hql_selectGua = "from ProductsEntity where guaranteed = true and save = false " +
                 "and minMoney < ? and days < ? order by earn desc ";
         Query selectGua = session.createQuery(hql_selectGua);
-        selectGua.setParameter(0, time);
-        selectGua.setParameter(1, time);
+//        selectGua.setParameter(0, time);
+//        selectGua.setParameter(1, time);
         setParameter(money,day,selectGua);
         List<ProductsEntity> guaEntity = (List<ProductsEntity>) selectGua.list();
         guaEntity = guaEntity.subList(0, guaEntity.size() > 3 ? 3 : guaEntity.size());
         //选择低风险的产品
         String hql_selectUngua = "from ProductsEntity where guaranteed = false and risk = 2 and save = false " +
-                "and dateStart < ? and dateEnd > ? " +
                 "and minMoney < ? and days < ? order by earn desc ";
         Query selectUngua = session.createQuery(hql_selectUngua);
-        selectUngua.setParameter(0, time);
-        selectUngua.setParameter(1, time);
+//        selectUngua.setParameter(0, time);
+//        selectUngua.setParameter(1, time);
         setParameter(money,day,selectUngua);
-        setParameter(money,day,selectGua);
         List<ProductsEntity> unGuaEntity = (List<ProductsEntity>) selectUngua.list();
         unGuaEntity = unGuaEntity.subList(0, unGuaEntity.size() > 3 ? 3 : unGuaEntity.size());
         //进行组合并且保存相关信息
@@ -190,20 +190,19 @@ public class group extends HttpServlet {
         List res = new ArrayList();
         Long time = new Date().getTime();
         String hql_selectGua = "from ProductsEntity where guaranteed = false and risk = 2 " +
-                "and save = false and dateStart < ? and dateEnd > ? " +
-                "and minMoney < ? and days < ? order by earn desc ";
+                "and save = false and minMoney < ? " +
+                "and days < ? order by earn desc ";
         Query selectGua = session.createQuery(hql_selectGua);
-        selectGua.setParameter(0, time);
-        selectGua.setParameter(1, time);
+//        selectGua.setParameter(0, time);
+//        selectGua.setParameter(1, time);
         setParameter(money,day,selectGua);
         List<ProductsEntity> guaEntity = (List<ProductsEntity>) selectGua.list();
         guaEntity = guaEntity.subList(0, guaEntity.size() > 3 ? 3 : guaEntity.size());
         String hql_selectUngua = "from ProductsEntity where guaranteed = false and risk = 3 and save = false " +
-                "and dateStart < ? and dateEnd > ? " +
                 "and minMoney < ? and days < ? order by earn desc ";
         Query selectUngua = session.createQuery(hql_selectUngua);
-        selectUngua.setParameter(0, time);
-        selectUngua.setParameter(1, time);
+//        selectUngua.setParameter(0, time);
+//        selectUngua.setParameter(1, time);
         setParameter(money,day,selectUngua);
         setParameter(money,day,selectGua);
         List<ProductsEntity> unGuaEntity = (List<ProductsEntity>) selectUngua.list();
@@ -246,21 +245,19 @@ public class group extends HttpServlet {
     private List getDate4(Session session, int day, int money){
         List res = new ArrayList();
         Long time = new Date().getTime();
-        String hql_selectGua = "from ProductsEntity where guaranteed = false and risk = 3 and save = false" +
-                "and dateStart < ? and dateEnd > ? " +
+        String hql_selectGua = "from ProductsEntity where guaranteed = false and risk = 3 and save = false " +
                 "and minMoney < ? and days < ? order by earn desc ";
         Query selectGua = session.createQuery(hql_selectGua);
-        selectGua.setParameter(0, time);
-        selectGua.setParameter(1, time);
+//        selectGua.setParameter(0, time);
+//        selectGua.setParameter(1, time);
         setParameter(money,day,selectGua);
         List<ProductsEntity> guaEntity = (List<ProductsEntity>) selectGua.list();
         guaEntity = guaEntity.subList(0, guaEntity.size() > 3 ? 3 : guaEntity.size());
         String hql_selectUngua = "from ProductsEntity where guaranteed = false and risk = 4 and save = false " +
-                "and dateStart < ? and dateEnd > ? " +
                 "and minMoney < ? and days < ? order by earn desc ";
         Query selectUngua = session.createQuery(hql_selectUngua);
-        selectUngua.setParameter(0, time);
-        selectUngua.setParameter(1, time);
+//        selectUngua.setParameter(0, time);
+//        selectUngua.setParameter(1, time);
         setParameter(money,day,selectUngua);
         setParameter(money,day,selectGua);
         List<ProductsEntity> unGuaEntity = (List<ProductsEntity>) selectUngua.list();
@@ -304,20 +301,18 @@ public class group extends HttpServlet {
         List res = new ArrayList();
         Long time = new Date().getTime();
         String hql_selectGua = "from ProductsEntity where guaranteed = false and risk = 4 and save = false" +
-                "and dateStart < ? and dateEnd > ? " +
                 "and minMoney < ? and days < ? order by earn desc ";
         Query selectGua = session.createQuery(hql_selectGua);
-        selectGua.setParameter(0, time);
-        selectGua.setParameter(1, time);
+//        selectGua.setParameter(0, time);
+//        selectGua.setParameter(1, time);
         setParameter(money,day,selectGua);
         List<ProductsEntity> guaEntity = (List<ProductsEntity>) selectGua.list();
         guaEntity = guaEntity.subList(0, guaEntity.size() > 3 ? 3 : guaEntity.size());
         String hql_selectUngua = "from ProductsEntity where guaranteed = false and risk = 5 and save = false " +
-                "and dateStart < ? and dateEnd > ? " +
                 "and minMoney < ? and days < ? order by earn desc ";
         Query selectUngua = session.createQuery(hql_selectUngua);
-        selectUngua.setParameter(0, time);
-        selectUngua.setParameter(1, time);
+//        selectUngua.setParameter(0, time);
+//        selectUngua.setParameter(1, time);
         setParameter(money,day,selectUngua);
         setParameter(money,day,selectGua);
         List<ProductsEntity> unGuaEntity = (List<ProductsEntity>) selectUngua.list();
@@ -358,38 +353,40 @@ public class group extends HttpServlet {
     }
 
     private void setParameter(int money,int day,Query query){
+        System.out.println(day);
+        System.out.println(money);
         switch (money) {
             case 0:
-                query.setParameter(2, 1000.0);
+                query.setParameter(0, 1000.0);
                 break;
             case 1:
-                query.setParameter(2, 5000.0);
+                query.setParameter(0, 5000.0);
                 break;
             case 2:
-                query.setParameter(2, 10000.0);
+                query.setParameter(0, 10000.0);
                 break;
             case 3:
-                query.setParameter(2, 50000.0);
+                query.setParameter(0, 50000.0);
                 break;
             case 4:
-                query.setParameter(2, Double.MAX_VALUE);
+                query.setParameter(0, Double.MAX_VALUE);
                 break;
         }
         switch (day) {
             case 0:
-                query.setParameter(3, 30);
+                query.setParameter(1, 30);
                 break;
             case 1:
-                query.setParameter(3, 150);
+                query.setParameter(1, 150);
                 break;
             case 2:
-                query.setParameter(3, 365);
+                query.setParameter(1, 365);
                 break;
             case 3:
-                query.setParameter(3, 365 * 3);
+                query.setParameter(1, 365 * 3);
                 break;
             case 4:
-                query.setParameter(3, Integer.MAX_VALUE);
+                query.setParameter(1, Integer.MAX_VALUE);
                 break;
         }
     }
