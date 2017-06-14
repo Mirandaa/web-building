@@ -141,7 +141,7 @@ public class group extends HttpServlet {
         setParameter(money,day,selectGua);
         List<ProductsEntity> guaEntity = (List<ProductsEntity>) selectGua.list();
         guaEntity = guaEntity.subList(0, guaEntity.size() > 3 ? 3 : guaEntity.size());
-        //选择低风险的产品
+        //选择低风险的产品groups
         String hql_selectUngua = "from ProductsEntity where guaranteed = false and risk = 2 and save = false " +
                 "and minMoney < ? and days < ? order by earn desc ";
         Query selectUngua = session.createQuery(hql_selectUngua);

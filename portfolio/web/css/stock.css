@@ -1,0 +1,9 @@
+.grail1 {
+	width: 390px;
+	min-width: 260px;
+	height: 350px;
+	padding-right: 15px;
+	padding-left: 15px;
+	position: relative;
+	float: left;
+}

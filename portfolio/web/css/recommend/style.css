@@ -9,6 +9,9 @@ Website: http://thevectorlab.net/
 @import url(http://fonts.googleapis.com/css?family=Open+Sans:400,300,300italic,400italic,600,600italic,700,700italic,800,800italic);
 @charset "utf-8";
 
+
+
+
 ul li {
     list-style: none;
 }
@@ -143,7 +146,7 @@ ul.sidebar-menu li.active a i {
 }
 
 .right-side {
-    height: 500px;
+    height: 600px;
     width: 75%;
     margin-left: 220px;
     float: left;
@@ -247,7 +250,7 @@ ul.sidebar-menu li.active a i {
 
 /*登录后未测风险*/
 .right-side-untest {
-    height: 500px;
+    height: 600px;
     width: 100%;
     float: left;
     margin: 0 auto;
@@ -531,6 +534,27 @@ li{
   border: 0.5px solid #48c7ec;
 }
 
+/* 再次测试 */
+.right-side-test a {
+    display: block;
+    margin: 0px auto;
+}
 
+.right-side-test a .button {
+    margin: 0 auto;
+    padding: 0;
+    width: 200px;
+    height: 50px;
+    border: 2px solid #48c7ec;
+    border-radius: 40px;
+    background: transparent;
+    color: #48c7ec;
+    letter-spacing: 1px;
+    font-size: 18px;
+    font-family: 'Montserrat', sans-serif;
+    cursor: pointer;
+    text-transform: none;
+    line-height: normal;
+}
 
 

@@ -1,0 +1,64 @@
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<link rel="stylesheet" type="text/css" href="css/recommend/style.css">
+<link rel="stylesheet" href="https://cdn.bootcss.com/font-awesome/4.7.0/css/font-awesome.min.css">
+
+<script src="js/recommend/jquery-3.2.1.min.js"></script>
+
+<link rel="stylesheet" href="css/style.css">
+<link rel="stylesheet" href="css/responsive.css">
+<link rel="stylesheet" href="css/jquery.circliful.css">
+
+<body>
+
+<section class="theme_menu stricky">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-4">
+                <div class="main-logo">
+                    <a href="index.html"><img src="images/logo/logo.png" alt=""></a>
+                </div>
+            </div>
+            <div class="col-md-8 menu-column">
+                <nav class="menuzord" id="main_menu">
+                    <ul class="menuzord-menu">
+                        <li ><a href="index.html">首页</a></li>
+                        <li id="guide"><a href="about.html">新手指引</a></li>
+                        <li class="active" id="ranking"><a href="service.html">组合排行榜</a></li>
+                        <li id="recommend"><a href="project.html">组合推荐</a></li>
+                        <li id="details"><a href="shop.html">股票行情</a></li>
+                        <li id="sign"><a href="sign_in.html">登录／注册</a></li>
+                    </ul><!-- End of .menuzord-menu -->
+                </nav> <!-- End of #main_menu -->
+            </div>
+            <div class="right-column">
+                <div class="right-area">
+                    <div class="nav_side_content">
+                        <div class="search_option">
+                            <button class="search tran3s dropdown-toggle color1_bg" id="searchDropdown" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><i class="fa fa-search" aria-hidden="true"></i></button>
+                            <form action="#" class="dropdown-menu" aria-labelledby="searchDropdown">
+                                <input type="text" placeholder="Search...">
+                                <button><i class="fa fa-search" aria-hidden="true"></i></button>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+
+
+    </div> <!-- End of .conatiner -->
+</section>
+<div id="groupContent">
+
+</div>
+
+<script src="js/recommend/select.jquery.js"></script>
+<script src="myJS/project.js"></script>
+<script>
+    $(document).ready(getGroups());
+</script>
+</body>
+
+
